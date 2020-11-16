@@ -1,0 +1,26 @@
+logpackage Beispiel
+HISTORISATION BITEMPORAL
+REPRESENTATION BITEMPORAL //DATAVAULT
+
+commonmapping BeispielCommonMapping{
+	InputField{
+		Field A [ type String length 100 NullIndicator "test" isFastChanging: true ],
+		Field B [ type Decimal precision 10 scale 2 original_name "bb" short_describtion "TestFeld" allowExponent: true tableOnly:false],
+		Field C [ type TimeStamp dateFormat "YYYY-MM-DDTHH:MM:SS" interfaceOnly:true ]
+	}
+	OutputField {
+		Field Ergebniss [ type TrueFalse ]
+	}
+},
+
+Entity BeispielEntity{
+	
+	entityFields{
+		Field TestField [ type String length 100 NullIndicator "test" isFastChanging: true ]
+	}
+	Relationship [ A FROM: BeispielEntity To:  BeispielEntity 
+		DescribingFields:{ TestField}
+		IdentifyingFields:{ TestField}
+		]
+	
+}
