@@ -1,6 +1,6 @@
 logpackage Beispiel
 HISTORISATION BITEMPORAL
-REPRESENTATION BITEMPORAL //DATAVAULT
+REPRESENTATION DATAVAULT
 
 commonmapping BeispielCommonMapping{
 	InputField{
@@ -16,11 +16,27 @@ commonmapping BeispielCommonMapping{
 Entity BeispielEntity{
 	
 	entityFields{
-		Field TestField [ type String length 100 NullIndicator "test" isFastChanging: true ]
+		Field TestField [ type String length 100  NullIndicator "test" isFastChanging: true  ]
 	}
-	Relationship [ A FROM: BeispielEntity To:  BeispielEntity 
-		DescribingFields:{ TestField}
-		IdentifyingFields:{ TestField}
-		]
+	Includes {
+		Include A
+		{
+			IncludeFields { BeispielCommonMapping.A , BeispielCommonMapping.B}
+			IdentifyingFields:{ BeispielCommonMapping.A}
+		}
+	}
+	Relationships {
+	   Relationship	A{
+			ToEntity:  BeispielEntity
+			DescribingFields:{ BeispielCommonMapping.A }
+			IdentifyingFields:{ BeispielCommonMapping.B }
+		},
+	  Relationship	B{
+			ToEntity: BeispielEntity
+			DescribingFields:{BeispielCommonMapping.B,BeispielCommonMapping.A}
+			IdentifyingFields:{BeispielCommonMapping.C , BeispielCommonMapping.Ergebniss}
+		}
+		
+	}
 	
 }
