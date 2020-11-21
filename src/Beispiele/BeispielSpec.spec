@@ -10,7 +10,8 @@ Specification Bsp
 	childSources [
 		Beispiel.BeispielEntity
 		PrimaryJoinFields { Beispiel.BeispielCommonMapping.A}
-		SecondaryJoinField { Beispiel.BeispielCommonMapping.C}	 	
+		SecondaryJoinField { Beispiel.BeispielCommonMapping.C}	
+		JoinType LEFT 	
 		
 	]
 }
