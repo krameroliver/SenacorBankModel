@@ -1,0 +1,110 @@
+logpackage ENB
+LAYER MORPORK
+LAYER_TYPE STAGE
+HISTORISATION BITEMPORAL
+REPRESENTATION DATAVAULT
+
+Entity acct{
+	entityFields{
+		Field account_id [ type String length 10 short_describtion "Account ID" ]
+		Field district_id [ type Int ]
+		Field frequency [ type String length 100]
+		Field parseddate [ type Date dateFormat "YYYY-MM-DD"]
+		Field year [ type Int ]
+		Field month [ type Int ]
+		Field day [ type Int ]
+	}
+},
+
+Entity card{
+	entityFields{
+	Field card_id [ type String length 10]
+	Field disp_id[ type String length 10]
+	Field card_type[ type String length 100 original_name "type" ]
+	Field year[ type Int ]
+	Field month[ type Int ]
+	Field day[ type Int ]
+	Field fulldate[ type Date dateFormat 'YYYY-MM-DD']
+	}	
+},
+
+Entity client{
+	entityFields{
+	Field client_id [ type String length 10]
+	Field sex[ type String length 6]
+	Field fulldate [ type Date dateFormat 'YYYY-MM-DD']
+	Field day[ type Int ]
+	Field month[ type Int ]
+	Field year[ type Int ]
+	Field age[ type Int ]
+	Field social[ type String length 15]
+	Field first[ type String length 255]
+	Field middle[ type String length 255]
+	Field last[ type String length 255]
+	Field phone[ type String length 100]
+	Field email[ type String length 100]
+	Field address_1[ type String length 100]
+	Field address_2[ type String length 100]
+	Field city[ type String length 100]
+	Field state[ type String length 100]
+	Field zipcode[ type String length 100]
+	Field district_id[ type Int]
+	}	
+},
+
+Entity disposition{
+	entityFields{
+		Field disp_id[ type String length 10]
+		Field client_id[ type String length 10]
+		Field account_id [ type String length 10]
+		Field user_type [ type String length 6 original_name "type" ]		
+	}
+},
+
+Entity loan{
+	entityFields{
+		Field loan_id[ type String length 10]
+		Field account_id[ type String length 10]
+		Field amount[ type Int]
+		Field duration[ type Int]
+		Field payments[ type Int]
+		Field status[type String length 1]
+		Field year[ type Int]
+		Field month[ type Int]
+		Field day[ type Int]
+		Field fulldate[ type Date dateFormat 'YYYY-MM-DD']
+		Field location[ type Int]
+		Field purpose[ type String length 255]
+	}
+},
+Entity order{
+	entityFields{
+		Field order_id[ type String length 10]
+		Field account_id[ type String length 10]
+		Field bank_to[ type String length 2]
+		Field account_to[ type Int]
+		Field amount[ type Decimal precision 32 scale 2]
+		Field k_symbol[ type String length 100]
+	}
+},
+
+Entity trans{
+	entityFields{
+		Field RUN_ID[ type Int  tableOnly: true]
+		Field trans_id[ type String length 10]
+		Field account_id[ type String length 10]
+		Field trans_type[ type String length 100 original_name "type"]
+		Field operation[ type String length 100]
+		Field amount[ type Decimal precision 32 scale 2]
+		Field balance[ type String length 100]
+		Field k_symbol[ type String length 100]
+		Field bank[ type String length 2]
+		Field account[ type Int]
+		Field year[ type Int]
+		Field month[ type Int]
+		Field day[ type Int]
+		Field fulldate[ type Date dateFormat 'DD.MM.YYYY']
+		Field fulltime[ type String length 10] 
+		Field fulldatewithtime [ type TimeStamp ]
+	}
+}

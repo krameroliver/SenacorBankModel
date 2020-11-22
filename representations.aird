@@ -3,4 +3,5 @@
   <semanticResources>src/Beispiele/BeispielSpec.spec</semanticResources>
   <semanticResources>src/Beispiele/BeispielModel.model</semanticResources>
   <semanticResources>src/Beispiele/Test.spec</semanticResources>
+  <semanticResources>src/MORPORK/ENB/enb.model</semanticResources>
 </viewpoint:DAnalysis>
