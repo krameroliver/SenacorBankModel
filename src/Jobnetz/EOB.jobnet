@@ -1,0 +1,21 @@
+SchedulePackage EOB
+ProcessingPoint {
+	ProcessingPoint EOB
+	{
+		ProcessingPointType Business
+		DependentJobs { ENB_MORPORK_IMPORT}
+		
+	}
+}
+################################## Jobs #################################
+Jobs
+{
+	Job ENB_MORPORK_IMPORT
+	{ 
+		RunTime EveryDay
+		JobType Import
+		TECH_SYSTEM ENB
+		ExecutableName "enb_morgport_import.plan"
+		
+	}
+}

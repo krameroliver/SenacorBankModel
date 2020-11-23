@@ -5,12 +5,12 @@ Specification Bsp
 	target 
 	RuleType SingleFire
 	BusinessRule Test
-	targetEntity A.BeispielEntity
-	PrimarySource A.BeispielEntity
+	targetEntity ENB.acct
+	PrimarySource ENB.card
 	childSources [
-		A.BeispielEntity
-		PrimaryJoinFields { A.BeispielCommonMapping.A}
-		SecondaryJoinField { A.BeispielCommonMapping.C}	
+		ENB.disposition
+		PrimaryJoinFields { ENB.trans.account}
+		SecondaryJoinField { ENB.acct.account_id}	
 		JoinType LEFT 	
 		
 	]

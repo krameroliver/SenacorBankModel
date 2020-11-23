@@ -1,4 +1,5 @@
 record
+record
 run_id decimal('\x01',0);
 trans_id string("\x01");
 account_id string("\x01");
@@ -15,4 +16,11 @@ day decimal('\x01',0);
 fulldate date("YYYY-MM-DD");
 fulltime string("\x01");
 fulldatewithtime datetime("YYYY-MM-DD HH24:MI:SS");
+end s_trans
+
+record
+record_source string("\x01");
+record_hk string("\x01");
+trans_hk string("\x01");
+end h_trans
 end
