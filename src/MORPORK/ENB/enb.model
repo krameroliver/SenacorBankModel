@@ -90,7 +90,7 @@ Entity order{
 
 Entity trans{
 	entityFields{
-		Field RUN_ID[ type Int  tableOnly: true]
+		Field RUN_ID[ type Int  tableOnly ]
 		Field trans_id[ type String length 10]
 		Field account_id[ type String length 10]
 		Field trans_type[ type String length 100 original_name "type"]
