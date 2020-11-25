@@ -15,7 +15,7 @@ Jobs
 		RunTime EveryDay
 		JobType Import
 		TECH_SYSTEM ENB
-		ExecutableName "enb_morgport_import.plan"
+		ExecutableName "enb_src_import.plan"
 		
 	}
 }

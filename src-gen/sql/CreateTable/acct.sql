@@ -1,4 +1,4 @@
-CREATE TABLE Source.s_acct(
+CREATE TABLE SRC.s_acct(
 account_id VARCHAR(10 ),
 district_id integer,
 frequency VARCHAR(100 ),
@@ -16,15 +16,15 @@ effectiv_timerange tstzrange,
 PRIMARY KEY(acct_hk,PROCESSING_POINT)
 );
 
-CREATE TABLE Source.s_acct_hist (like Source.s_acct including all);
-CREATE TRIGGER versioning_trigger_s_acct BEFORE INSERT OR UPDATE OR DELETE ON Source.s_acct FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'Source.acct_hist', true);
+CREATE TABLE SRC.s_acct_hist (like SRC.s_acct including all);
+CREATE TRIGGER versioning_trigger_s_acct BEFORE INSERT OR UPDATE OR DELETE ON SRC.s_acct FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'SRC.acct_hist', true);
 ---
-CREATE TABLE Source.h_acct(
+CREATE TABLE SRC.h_acct(
 acct_hk CHAR(32),
 PRIMARY KEY(acct_hk)
 );
 ---
-CREATE TABLE Source.s_acct_fc(
+CREATE TABLE SRC.s_acct_fc(
 creation_date DATE,
 modification_date DATE,
 processing_point VARCHAR(10),
@@ -35,8 +35,8 @@ effectiv_timerange tstzrange,
 PRIMARY KEY(acct_hk,PROCESSING_POINT)
 );
 
-CREATE TABLE Source.s_acct_fc_hist (like Source.s_acct including all);
-CREATE TRIGGER versioning_trigger_s_acct_fc BEFORE INSERT OR UPDATE OR DELETE ON Source.s_acct_fc FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'Source.acct_fc_hist', true);
+CREATE TABLE SRC.s_acct_fc_hist (like SRC.s_acct including all);
+CREATE TRIGGER versioning_trigger_s_acct_fc BEFORE INSERT OR UPDATE OR DELETE ON SRC.s_acct_fc FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'SRC.acct_fc_hist', true);
 ---
 ---
 ---

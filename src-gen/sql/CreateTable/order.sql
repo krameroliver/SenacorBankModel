@@ -1,4 +1,4 @@
-CREATE TABLE Source.s_order(
+CREATE TABLE SRC.s_order(
 order_id VARCHAR(10 ),
 account_id VARCHAR(10 ),
 bank_to VARCHAR(2 ),
@@ -15,15 +15,15 @@ effectiv_timerange tstzrange,
 PRIMARY KEY(order_hk,PROCESSING_POINT)
 );
 
-CREATE TABLE Source.s_order_hist (like Source.s_order including all);
-CREATE TRIGGER versioning_trigger_s_order BEFORE INSERT OR UPDATE OR DELETE ON Source.s_order FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'Source.order_hist', true);
+CREATE TABLE SRC.s_order_hist (like SRC.s_order including all);
+CREATE TRIGGER versioning_trigger_s_order BEFORE INSERT OR UPDATE OR DELETE ON SRC.s_order FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'SRC.order_hist', true);
 ---
-CREATE TABLE Source.h_order(
+CREATE TABLE SRC.h_order(
 order_hk CHAR(32),
 PRIMARY KEY(order_hk)
 );
 ---
-CREATE TABLE Source.s_order_fc(
+CREATE TABLE SRC.s_order_fc(
 creation_date DATE,
 modification_date DATE,
 processing_point VARCHAR(10),
@@ -34,8 +34,8 @@ effectiv_timerange tstzrange,
 PRIMARY KEY(order_hk,PROCESSING_POINT)
 );
 
-CREATE TABLE Source.s_order_fc_hist (like Source.s_order including all);
-CREATE TRIGGER versioning_trigger_s_order_fc BEFORE INSERT OR UPDATE OR DELETE ON Source.s_order_fc FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'Source.order_fc_hist', true);
+CREATE TABLE SRC.s_order_fc_hist (like SRC.s_order including all);
+CREATE TRIGGER versioning_trigger_s_order_fc BEFORE INSERT OR UPDATE OR DELETE ON SRC.s_order_fc FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'SRC.order_fc_hist', true);
 ---
 ---
 ---
