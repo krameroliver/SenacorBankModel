@@ -16,6 +16,9 @@ Jobs
 		JobType Import
 		TECH_SYSTEM ENB
 		ExecutableName "enb_src_import.plan"
+		DependentJobs {
+			ENB_MORPORK_IMPORT
+		}
 		
 	}
 }
