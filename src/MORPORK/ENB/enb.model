@@ -1,10 +1,17 @@
 logpackage ENB
-LAYER MORPORK
+LAYER Source
 LAYER_TYPE STAGE
 HISTORISATION BITEMPORAL
 REPRESENTATION DATAVAULT
 
-Entity acct{
+Entity acct
+	metadata
+	{
+		FileName "A.csv"
+		ColumnDelimiter ","
+		lineDelimiter "\\r\\n"
+	}
+	{
 	entityFields{
 		Field account_id [ type String length 10 short_describtion "Account ID" ]
 		Field district_id [ type Int ]
@@ -16,7 +23,13 @@ Entity acct{
 	}
 },
 
-Entity card{
+Entity card
+metadata
+	{
+		FileName "A.csv"
+		ColumnDelimiter ","
+		lineDelimiter "\\r\\n"
+	}{
 	entityFields{
 	Field card_id [ type String length 10]
 	Field disp_id[ type String length 10]
@@ -28,7 +41,13 @@ Entity card{
 	}	
 },
 
-Entity client{
+Entity client
+metadata
+	{
+		FileName "A.csv"
+		ColumnDelimiter ","
+		lineDelimiter "\\r\\n"
+	}{
 	entityFields{
 	Field client_id [ type String length 10]
 	Field sex[ type String length 6]
@@ -52,7 +71,13 @@ Entity client{
 	}	
 },
 
-Entity disposition{
+Entity disposition
+metadata
+	{
+		FileName "A.csv"
+		ColumnDelimiter ","
+		lineDelimiter "\\r\\n"
+	}{
 	entityFields{
 		Field disp_id[ type String length 10]
 		Field client_id[ type String length 10]
@@ -61,7 +86,13 @@ Entity disposition{
 	}
 },
 
-Entity loan{
+Entity loan
+metadata
+	{
+		FileName "A.csv"
+		ColumnDelimiter ","
+		lineDelimiter "\\r\\n"
+	}{
 	entityFields{
 		Field loan_id[ type String length 10]
 		Field account_id[ type String length 10]
@@ -77,7 +108,13 @@ Entity loan{
 		Field purpose[ type String length 255]
 	}
 },
-Entity order{
+Entity order
+metadata
+	{
+		FileName "A.csv"
+		ColumnDelimiter ","
+		lineDelimiter "\\r\\n"
+	}{
 	entityFields{
 		Field order_id[ type String length 10]
 		Field account_id[ type String length 10]
@@ -88,7 +125,13 @@ Entity order{
 	}
 },
 
-Entity trans{
+Entity trans
+metadata
+	{
+		FileName "A.csv"
+		ColumnDelimiter ","
+		lineDelimiter "\\r\\n"
+	}{
 	entityFields{
 		Field RUN_ID[ type Int  tableOnly ]
 		Field trans_id[ type String length 10]

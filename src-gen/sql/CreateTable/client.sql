@@ -1,4 +1,4 @@
-CREATE TABLE MORPORK.s_client(
+CREATE TABLE Source.s_client(
 client_id VARCHAR(10 ),
 sex VARCHAR(6 ),
 fulldate DATE,
@@ -28,15 +28,15 @@ effectiv_timerange tstzrange,
 PRIMARY KEY(client_hk,PROCESSING_POINT)
 );
 
-CREATE TABLE MORPORK.s_client_hist (like MORPORK.s_client including all);
-CREATE TRIGGER versioning_trigger_s_client BEFORE INSERT OR UPDATE OR DELETE ON MORPORK.s_client FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'MORPORK.client_hist', true);
+CREATE TABLE Source.s_client_hist (like Source.s_client including all);
+CREATE TRIGGER versioning_trigger_s_client BEFORE INSERT OR UPDATE OR DELETE ON Source.s_client FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'Source.client_hist', true);
 ---
-CREATE TABLE MORPORK.h_client(
+CREATE TABLE Source.h_client(
 client_hk CHAR(32),
 PRIMARY KEY(client_hk)
 );
 ---
-CREATE TABLE MORPORK.s_client_fc(
+CREATE TABLE Source.s_client_fc(
 creation_date DATE,
 modification_date DATE,
 processing_point VARCHAR(10),
@@ -47,8 +47,8 @@ effectiv_timerange tstzrange,
 PRIMARY KEY(client_hk,PROCESSING_POINT)
 );
 
-CREATE TABLE MORPORK.s_client_fc_hist (like MORPORK.s_client including all);
-CREATE TRIGGER versioning_trigger_s_client_fc BEFORE INSERT OR UPDATE OR DELETE ON MORPORK.s_client_fc FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'MORPORK.client_fc_hist', true);
+CREATE TABLE Source.s_client_fc_hist (like Source.s_client including all);
+CREATE TRIGGER versioning_trigger_s_client_fc BEFORE INSERT OR UPDATE OR DELETE ON Source.s_client_fc FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'Source.client_fc_hist', true);
 ---
 ---
 ---

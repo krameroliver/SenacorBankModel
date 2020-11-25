@@ -1,4 +1,4 @@
-CREATE TABLE MORPORK.s_acct(
+CREATE TABLE Source.s_acct(
 account_id VARCHAR(10 ),
 district_id integer,
 frequency VARCHAR(100 ),
@@ -16,15 +16,15 @@ effectiv_timerange tstzrange,
 PRIMARY KEY(acct_hk,PROCESSING_POINT)
 );
 
-CREATE TABLE MORPORK.s_acct_hist (like MORPORK.s_acct including all);
-CREATE TRIGGER versioning_trigger_s_acct BEFORE INSERT OR UPDATE OR DELETE ON MORPORK.s_acct FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'MORPORK.acct_hist', true);
+CREATE TABLE Source.s_acct_hist (like Source.s_acct including all);
+CREATE TRIGGER versioning_trigger_s_acct BEFORE INSERT OR UPDATE OR DELETE ON Source.s_acct FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'Source.acct_hist', true);
 ---
-CREATE TABLE MORPORK.h_acct(
+CREATE TABLE Source.h_acct(
 acct_hk CHAR(32),
 PRIMARY KEY(acct_hk)
 );
 ---
-CREATE TABLE MORPORK.s_acct_fc(
+CREATE TABLE Source.s_acct_fc(
 creation_date DATE,
 modification_date DATE,
 processing_point VARCHAR(10),
@@ -35,8 +35,8 @@ effectiv_timerange tstzrange,
 PRIMARY KEY(acct_hk,PROCESSING_POINT)
 );
 
-CREATE TABLE MORPORK.s_acct_fc_hist (like MORPORK.s_acct including all);
-CREATE TRIGGER versioning_trigger_s_acct_fc BEFORE INSERT OR UPDATE OR DELETE ON MORPORK.s_acct_fc FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'MORPORK.acct_fc_hist', true);
+CREATE TABLE Source.s_acct_fc_hist (like Source.s_acct including all);
+CREATE TRIGGER versioning_trigger_s_acct_fc BEFORE INSERT OR UPDATE OR DELETE ON Source.s_acct_fc FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'Source.acct_fc_hist', true);
 ---
 ---
 ---
