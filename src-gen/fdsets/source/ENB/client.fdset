@@ -5,7 +5,7 @@
 {30001002|XXparameter|category|file|3|1|RHl||{0|}}
 {30001002|XXparameter|metadata|$\{AI_DML\}/client.dml|7|9|Rnf|canonical record format|{0|}}
 {30001002|XXparameter|default_mode|Input|3|1|RHl||{0|}}
-{30001002|XXparameter|Layout|file:$SENACORBANK_DATA_DIRECTORY/a.csv|28|2|RF$||{0|}}
+{30001002|XXparameter|Layout|file:$SENACORBANK_DATA_DIRECTORY/completedclient.csv|28|2|RF$||{0|}}
 {30001002|XXparameter|key|@19|9|F|field(s) to match during lookup|{0|}}
 {30001002|XXparameter|%delimiter|,|3|9|RP|@{0|}}
 {30001002|XXparameter|%delimiter.display_name|delimiter|3|9|P|@{0|}}

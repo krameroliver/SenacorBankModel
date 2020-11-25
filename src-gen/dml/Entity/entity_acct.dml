@@ -1,0 +1,22 @@
+record
+record
+	string("\x01", maximum_length=10) account_id;
+	decimal('\x01',0) district_id;
+	string("\x01", maximum_length=100) frequency;
+	date("YYYY-MM-DD") parseddate;
+	decimal('\x01',0) year;
+	decimal('\x01',0) month;
+	decimal('\x01',0) day;
+date("YYYY-MM-DD") creation_date;
+date("YYYY-MM-DD") modification_date;
+string("\x01") processing_point;
+string("\x01") record_source;
+string("\x01") record_hk CHAR;
+string("\x01") acct_hk;
+string("\x01") effectiv_timerange;
+end s_acct
+record
+string("\x01") record_source;
+string("\x01") acct_hk;
+end h_acct
+end
