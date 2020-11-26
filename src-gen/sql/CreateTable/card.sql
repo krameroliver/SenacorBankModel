@@ -8,12 +8,10 @@ day integer,
 fulldate DATE,
 creation_date DATE,
 modification_date DATE,
-processing_point VARCHAR(10),
 record_source VARCHAR(255),
-record_hk CHAR(32),
 card_hk CHAR(32),
 effectiv_timerange tstzrange,
-PRIMARY KEY(card_hk,PROCESSING_POINT)
+PRIMARY KEY(card_hk,effectiv_timerange)
 );
 
 CREATE TABLE SRC.s_card_hist (like SRC.s_card including all);
@@ -27,12 +25,10 @@ PRIMARY KEY(card_hk)
 CREATE TABLE SRC.s_card_fc(
 creation_date DATE,
 modification_date DATE,
-processing_point VARCHAR(10),
 record_source VARCHAR(255),
-record_hk CHAR(32),
 card_hk CHAR(32),
 effectiv_timerange tstzrange,
-PRIMARY KEY(card_hk,PROCESSING_POINT)
+PRIMARY KEY(card_hk,effectiv_timerange)
 );
 
 CREATE TABLE SRC.s_card_fc_hist (like SRC.s_card including all);

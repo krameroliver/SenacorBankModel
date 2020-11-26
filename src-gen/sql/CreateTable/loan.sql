@@ -13,12 +13,10 @@ location integer,
 purpose VARCHAR(255 ),
 creation_date DATE,
 modification_date DATE,
-processing_point VARCHAR(10),
 record_source VARCHAR(255),
-record_hk CHAR(32),
 loan_hk CHAR(32),
 effectiv_timerange tstzrange,
-PRIMARY KEY(loan_hk,PROCESSING_POINT)
+PRIMARY KEY(loan_hk,effectiv_timerange)
 );
 
 CREATE TABLE SRC.s_loan_hist (like SRC.s_loan including all);
@@ -32,12 +30,10 @@ PRIMARY KEY(loan_hk)
 CREATE TABLE SRC.s_loan_fc(
 creation_date DATE,
 modification_date DATE,
-processing_point VARCHAR(10),
 record_source VARCHAR(255),
-record_hk CHAR(32),
 loan_hk CHAR(32),
 effectiv_timerange tstzrange,
-PRIMARY KEY(loan_hk,PROCESSING_POINT)
+PRIMARY KEY(loan_hk,effectiv_timerange)
 );
 
 CREATE TABLE SRC.s_loan_fc_hist (like SRC.s_loan including all);

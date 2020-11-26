@@ -17,12 +17,10 @@ fulltime VARCHAR(10 ),
 fulldatewithtime timestamp,
 creation_date DATE,
 modification_date DATE,
-processing_point VARCHAR(10),
 record_source VARCHAR(255),
-record_hk CHAR(32),
 trans_hk CHAR(32),
 effectiv_timerange tstzrange,
-PRIMARY KEY(trans_hk,PROCESSING_POINT)
+PRIMARY KEY(trans_hk,effectiv_timerange)
 );
 
 CREATE TABLE SRC.s_trans_hist (like SRC.s_trans including all);
@@ -36,12 +34,10 @@ PRIMARY KEY(trans_hk)
 CREATE TABLE SRC.s_trans_fc(
 creation_date DATE,
 modification_date DATE,
-processing_point VARCHAR(10),
 record_source VARCHAR(255),
-record_hk CHAR(32),
 trans_hk CHAR(32),
 effectiv_timerange tstzrange,
-PRIMARY KEY(trans_hk,PROCESSING_POINT)
+PRIMARY KEY(trans_hk,effectiv_timerange)
 );
 
 CREATE TABLE SRC.s_trans_fc_hist (like SRC.s_trans including all);

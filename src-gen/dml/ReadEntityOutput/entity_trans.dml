@@ -15,9 +15,5 @@ decimal('\x01',0) day;
 date("DD.MM.YYYY") fulldate;
 string("\x01", maximum_length=10) fulltime;
 datetime("YYYY-MM-DD HH24:MI:SS") fulldatewithtime;
-date("YYYY-MM-DD") creation_date;
-date("YYYY-MM-DD") modification_date;
-string("\x01") record_source;
-string("\x01") trans_hk;
-string("\x01") effectiv_timerange;
-end s_trans
+string("\x01") trans;
+end

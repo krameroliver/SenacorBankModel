@@ -1,4 +1,3 @@
 record
-string("\x01") record_source;
 string("\x01") acct_hk;
 end h_acct

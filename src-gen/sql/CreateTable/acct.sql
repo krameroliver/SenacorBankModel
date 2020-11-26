@@ -8,12 +8,10 @@ month integer,
 day integer,
 creation_date DATE,
 modification_date DATE,
-processing_point VARCHAR(10),
 record_source VARCHAR(255),
-record_hk CHAR(32),
 acct_hk CHAR(32),
 effectiv_timerange tstzrange,
-PRIMARY KEY(acct_hk,PROCESSING_POINT)
+PRIMARY KEY(acct_hk,effectiv_timerange)
 );
 
 CREATE TABLE SRC.s_acct_hist (like SRC.s_acct including all);
@@ -27,12 +25,10 @@ PRIMARY KEY(acct_hk)
 CREATE TABLE SRC.s_acct_fc(
 creation_date DATE,
 modification_date DATE,
-processing_point VARCHAR(10),
 record_source VARCHAR(255),
-record_hk CHAR(32),
 acct_hk CHAR(32),
 effectiv_timerange tstzrange,
-PRIMARY KEY(acct_hk,PROCESSING_POINT)
+PRIMARY KEY(acct_hk,effectiv_timerange)
 );
 
 CREATE TABLE SRC.s_acct_fc_hist (like SRC.s_acct including all);

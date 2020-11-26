@@ -20,12 +20,10 @@ zipcode VARCHAR(100 ),
 district_id integer,
 creation_date DATE,
 modification_date DATE,
-processing_point VARCHAR(10),
 record_source VARCHAR(255),
-record_hk CHAR(32),
 client_hk CHAR(32),
 effectiv_timerange tstzrange,
-PRIMARY KEY(client_hk,PROCESSING_POINT)
+PRIMARY KEY(client_hk,effectiv_timerange)
 );
 
 CREATE TABLE SRC.s_client_hist (like SRC.s_client including all);
@@ -39,12 +37,10 @@ PRIMARY KEY(client_hk)
 CREATE TABLE SRC.s_client_fc(
 creation_date DATE,
 modification_date DATE,
-processing_point VARCHAR(10),
 record_source VARCHAR(255),
-record_hk CHAR(32),
 client_hk CHAR(32),
 effectiv_timerange tstzrange,
-PRIMARY KEY(client_hk,PROCESSING_POINT)
+PRIMARY KEY(client_hk,effectiv_timerange)
 );
 
 CREATE TABLE SRC.s_client_fc_hist (like SRC.s_client including all);

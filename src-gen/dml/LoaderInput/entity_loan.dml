@@ -1,5 +1,4 @@
 record
-record
 string("\x01", maximum_length=10) loan_id;
 string("\x01", maximum_length=10) account_id;
 decimal('\x01',0) amount;
@@ -12,13 +11,4 @@ decimal('\x01',0) day;
 date("YYYY-MM-DD") fulldate;
 decimal('\x01',0) location;
 string("\x01", maximum_length=255) purpose;
-date("YYYY-MM-DD") creation_date;
-date("YYYY-MM-DD") modification_date;
-string("\x01") record_source;
-string("\x01") loan_hk;
-string("\x01") effectiv_timerange;
-end s_loan
-record
-string("\x01") loan_hk;
-end h_loan
 end

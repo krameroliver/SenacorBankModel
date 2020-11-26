@@ -7,12 +7,10 @@ amount NUMERIC(20 ,10),
 k_symbol VARCHAR(100 ),
 creation_date DATE,
 modification_date DATE,
-processing_point VARCHAR(10),
 record_source VARCHAR(255),
-record_hk CHAR(32),
 order_hk CHAR(32),
 effectiv_timerange tstzrange,
-PRIMARY KEY(order_hk,PROCESSING_POINT)
+PRIMARY KEY(order_hk,effectiv_timerange)
 );
 
 CREATE TABLE SRC.s_order_hist (like SRC.s_order including all);
@@ -26,12 +24,10 @@ PRIMARY KEY(order_hk)
 CREATE TABLE SRC.s_order_fc(
 creation_date DATE,
 modification_date DATE,
-processing_point VARCHAR(10),
 record_source VARCHAR(255),
-record_hk CHAR(32),
 order_hk CHAR(32),
 effectiv_timerange tstzrange,
-PRIMARY KEY(order_hk,PROCESSING_POINT)
+PRIMARY KEY(order_hk,effectiv_timerange)
 );
 
 CREATE TABLE SRC.s_order_fc_hist (like SRC.s_order including all);

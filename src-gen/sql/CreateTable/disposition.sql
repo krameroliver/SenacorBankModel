@@ -5,12 +5,10 @@ account_id VARCHAR(10 ),
 user_type VARCHAR(6 ),
 creation_date DATE,
 modification_date DATE,
-processing_point VARCHAR(10),
 record_source VARCHAR(255),
-record_hk CHAR(32),
 disposition_hk CHAR(32),
 effectiv_timerange tstzrange,
-PRIMARY KEY(disposition_hk,PROCESSING_POINT)
+PRIMARY KEY(disposition_hk,effectiv_timerange)
 );
 
 CREATE TABLE SRC.s_disposition_hist (like SRC.s_disposition including all);
@@ -24,12 +22,10 @@ PRIMARY KEY(disposition_hk)
 CREATE TABLE SRC.s_disposition_fc(
 creation_date DATE,
 modification_date DATE,
-processing_point VARCHAR(10),
 record_source VARCHAR(255),
-record_hk CHAR(32),
 disposition_hk CHAR(32),
 effectiv_timerange tstzrange,
-PRIMARY KEY(disposition_hk,PROCESSING_POINT)
+PRIMARY KEY(disposition_hk,effectiv_timerange)
 );
 
 CREATE TABLE SRC.s_disposition_fc_hist (like SRC.s_disposition including all);

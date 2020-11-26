@@ -1,4 +1,3 @@
 record
-string("\x01") record_source;
 string("\x01") trans_hk;
 end h_trans
