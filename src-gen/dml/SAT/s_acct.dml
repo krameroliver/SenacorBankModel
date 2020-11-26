@@ -2,7 +2,7 @@ record
 string("\x01", maximum_length=10) account_id;
 decimal('\x01',0) district_id;
 string("\x01", maximum_length=100) frequency;
-date("YYYY-MM-DD") parseddate;
+date(" "YYYY-MM-DD") parseddate;
 decimal('\x01',0) year;
 decimal('\x01',0) month;
 decimal('\x01',0) day;

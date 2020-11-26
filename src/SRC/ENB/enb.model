@@ -21,10 +21,6 @@ EntityDescription { afewf}
 		Field year [ type Int ]
 		Field month [ type Int ]
 		Field day [ type Int ]
-	}Includes{
-		Include TEst{
-			IncludeFields { Field A [ type Date ]}
-		}
 	}
 },
 

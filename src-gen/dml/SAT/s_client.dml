@@ -1,7 +1,7 @@
 record
 string("\x01", maximum_length=10) client_id;
 string("\x01", maximum_length=6) sex;
-date("YYYY-MM-DD") fulldate;
+date(" "YYYY-MM-DD") fulldate;
 decimal('\x01',0) day;
 decimal('\x01',0) month;
 decimal('\x01',0) year;

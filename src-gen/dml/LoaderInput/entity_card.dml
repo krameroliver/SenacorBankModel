@@ -5,5 +5,5 @@ string("\x01", maximum_length=100) card_type;
 decimal('\x01',0) year;
 decimal('\x01',0) month;
 decimal('\x01',0) day;
-date("YYYY-MM-DD") fulldate;
+date(" "YYYY-MM-DD") fulldate;
 end
