@@ -1,0 +1,66 @@
+logpackage ENB
+LAYER BIZ
+LAYER_TYPE INTEGRATION
+HISTORISATION BITEMPORAL
+REPRESENTATION DATAVAULT
+
+Entity Darlehen{
+	entityFields{
+		Field kontonummer [ type String length 18 short_describtion "Dies ist die eindeutige Kontonummer des Darlehensabrechnungskontos" ]
+		Field nominal [ type Decimal short_describtion "Das Nominal ist der im Kreditvertrag vereinbarte Betrag den sich der Geschäftspartner leiht"]
+		Field startdatum [ type Date dateFormat "YYYY-MM-DD"]
+		Field enddatum [ type Date dateFormat "YYYY-MM-DD"]
+		Field status [ type Int short_describtion "Status des Darlehens:
+													- 1/A: Vertrag abgelaufen, keine Probleme
+													- 2/B: Vertrag abgelaufen, Darlehen nicht abgezahlt
+													- 3/C: Vertrag laufend, keine Probleme
+													- 4/D: Vertrag laufend, Geschäftspartner im Zahlungsverzug "]
+		Field tilgung [ type Decimal short_describtion "Monatliche Zahlung zur Tilgung des Darlehens" ]
+		Field verwendungszweck [ type Int short_describtion "Verwendungszweck des Darlehens:
+																- 1: car
+																- 2: debt_consolidation
+																- 3: home_improvement
+																- 4: home"]
+	}
+},
+
+Entity Geschaeftspartner{
+	entityFields{
+		Field kundennummer [type String length 18 short_describtion "Eindeutige Nummer zur Identifikation eines Geschäftspartners"]
+		Field vorname [type String length 24 short_describtion "Vor- und Mittelname des Geschäftspartners"]
+		Field nachname [type String length 24 short_describtion "Nachame des Geschäftspartners"]
+		Field geburtsdatum [type Date dateFormat "YYYY-MM-DD"]
+		Field geschlecht [type Int short_describtion "Geschlecht des GP als ENUM
+														- 1: Frau
+														- 2: Mann"]
+		Field sozVersNr [type String length 24 short_describtion "Sozialversicherungsnummer des GP"]
+		// Field Anschrift includes Entity Anschrift
+		//Field mobil_kontakt includes "Mobiler Kontakt"
+		
+	}Includes {
+		Include anschrift{
+			IncludeFields{
+				Field addresse1 [type String length 50 short_describtion "Wohnaddresse des Geschäftspartners"],
+				Field addresse2 [type String length 50 short_describtion "Addresszusatz zur Wohnadresse"],
+				Field stadt [type String length 50 short_describtion "Stadt des Wohnsitzes"],
+				Field bundesland [type String length 50 short_describtion "Bundesland des Wohnsitzes"],
+				Field postleitzahl [type Int short_describtion "Postleitzahl des Wohnsitzes"]
+			}
+		},
+		Include mobil_kontakt{
+			IncludeFields{
+				Field kontakttyp [type Int short_describtion "Art/Type der Kontaktinformation
+														- 1: mobil privat
+														- 2: mobil geschaeftlich
+														- 3: Email"],
+				Field kontaktinfo [type String length 50 short_describtion "mobile Kontaktinformation"]
+			}
+		}
+	}
+}
+
+
+
+
+
+

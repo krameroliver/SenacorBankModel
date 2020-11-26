@@ -5,4 +5,5 @@
   <semanticResources>src/Beispiele/Test.spec</semanticResources>
   <semanticResources>src/MORPORK/ENB/enb.model</semanticResources>
   <semanticResources>src/Jobnetz/EOB.jobnet</semanticResources>
+  <semanticResources>src/BIZ/ENB/enb.model</semanticResources>
 </viewpoint:DAnalysis>
