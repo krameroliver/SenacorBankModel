@@ -5,7 +5,6 @@ HISTORISATION BITEMPORAL
 REPRESENTATION DATAVAULT
 
 Entity acct
-EntityDescription { afewf}
 	metadata
 	{
 		FileName "completedacct.csv"
