@@ -34,6 +34,28 @@ PRIMARY KEY(acct_hk,effectiv_timerange)
 CREATE TABLE SRC.s_acct_fc_hist (like SRC.s_acct including all);
 CREATE TRIGGER versioning_trigger_s_acct_fc BEFORE INSERT OR UPDATE OR DELETE ON SRC.s_acct_fc FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'SRC.acct_fc_hist', true);
 ---
+
+CREATE TABLE SRC.s_acct_TEst(
+creation_date DATE,
+modification_date DATE,
+record_source VARCHAR(255),
+acct_hk CHAR(32),
+effectiv_timerange tstzrange,
+PRIMARY KEY(acct_hk,effectiv_timerange)
+);
+CREATE TABLE SRC.s_acct_TEst_hist (like SRC.s_acct_TEst including all);
+CREATE TRIGGER versioning_trigger_SRC_s_acct_TEst BEFORE INSERT OR UPDATE OR DELETE ON SRC.s_acct_TEst FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'SRC.s_acct_TEst_hist', true);
 ---
+CREATE TABLE SRC.s_acct_TEst_fc(
+creation_date DATE,
+modification_date DATE,
+record_hk CHAR(32),
+acct_hk CHAR(32),
+effectiv_timerange tstzrange,
+PRIMARY KEY(acct_hk,effectiv_timerange)
+);
+
+CREATE TABLE SRC.s_acct_TEst_fc_hist (like SRC.s_acct_TEst_fc including all);
+CREATE TRIGGER versioning_trigger_s_SRC_s_acct_TEst_fc BEFORE INSERT OR UPDATE OR DELETE ON SRC.s_acct_TEst_fc FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'SRC.s_acct_TEst_fc_hist', true);
 ---
 
