@@ -1,4 +1,5 @@
 record
+string("x01") trans_hk
 	record
 	decimal('\x01',0) run_id
 	string("\x01", maximum_length=10) trans_id

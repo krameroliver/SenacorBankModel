@@ -1,4 +1,5 @@
 record
+string("x01") loan_hk
 	record
 	string("\x01", maximum_length=10) loan_id
 	string("\x01", maximum_length=10) account_id
