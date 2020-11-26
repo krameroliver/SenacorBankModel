@@ -22,6 +22,7 @@ EntityDescription { afewf}
 		Field month [ type Int ]
 		Field day [ type Int ]
 	}
+	
 },
 
 Entity card

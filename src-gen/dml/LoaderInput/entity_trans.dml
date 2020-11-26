@@ -12,7 +12,7 @@ decimal('\x01',0) account;
 decimal('\x01',0) year;
 decimal('\x01',0) month;
 decimal('\x01',0) day;
-date(" "DD.MM.YYYY") fulldate;
+date("DD.MM.YYYY") fulldate;
 string("\x01", maximum_length=10) fulltime;
 datetime("YYYY-MM-DD HH24:MI:SS") fulldatewithtime;
 end
