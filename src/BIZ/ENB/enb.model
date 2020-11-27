@@ -56,6 +56,11 @@ Entity Geschaeftspartner{
 				Field kontaktinfo [type String length 50 short_describtion "mobile Kontaktinformation"]
 			}
 		}
+	}Relationships{
+		Relationship link_GP_darlehen
+		{
+			ToEntity: Darlehen 			
+		}
 	}
 }
 

@@ -6,4 +6,8 @@
   <semanticResources>src/MORPORK/ENB/enb.model</semanticResources>
   <semanticResources>src/Jobnetz/EOB.jobnet</semanticResources>
   <semanticResources>src/BIZ/ENB/enb.model</semanticResources>
+  <semanticResources>src/SRC/ENB/enb.model</semanticResources>
+  <semanticResources>src/BIZ/ENB/darlehen.spec</semanticResources>
+  <semanticResources>src/BIZ/ENB/GP.spec</semanticResources>
+  <semanticResources>src/BIZ/ENB/link_loan_GP.spec</semanticResources>
 </viewpoint:DAnalysis>
