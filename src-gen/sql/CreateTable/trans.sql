@@ -1,4 +1,4 @@
-CREATE TABLE SRC.s_trans(
+CREATE TABLE SRC${SCHEMA_ID}.s_trans(
 run_id integer,
 trans_id VARCHAR(10 ),
 account_id VARCHAR(10 ),
@@ -19,30 +19,19 @@ creation_date DATE,
 modification_date DATE,
 record_source VARCHAR(255),
 trans_hk CHAR(32),
-effectiv_timerange tstzrange,
+effectiv_timerange daterange,
 PRIMARY KEY(trans_hk,effectiv_timerange)
 );
 
-CREATE TABLE SRC.s_trans_hist (like SRC.s_trans including all);
-CREATE TRIGGER versioning_trigger_s_trans BEFORE INSERT OR UPDATE OR DELETE ON SRC.s_trans FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'SRC.trans_hist', true);
+CREATE TABLE SRC${SCHEMA_ID}.s_trans_hist (like SRC${SCHEMA_ID}.s_trans including all);
+CREATE TRIGGER versioning_trigger_s_trans BEFORE INSERT OR UPDATE OR DELETE ON SRC${SCHEMA_ID}.s_trans FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'SRC${SCHEMA_ID}.trans_hist', true);
 ---
-CREATE TABLE SRC.h_trans(
+CREATE TABLE SRC${SCHEMA_ID}.h_trans(
+trans_id VARCHAR(10 ),
+account_id VARCHAR(10 ),
 trans_hk CHAR(32),
 PRIMARY KEY(trans_hk)
 );
----
-CREATE TABLE SRC.s_trans_fc(
-creation_date DATE,
-modification_date DATE,
-record_source VARCHAR(255),
-trans_hk CHAR(32),
-effectiv_timerange tstzrange,
-PRIMARY KEY(trans_hk,effectiv_timerange)
-);
-
-CREATE TABLE SRC.s_trans_fc_hist (like SRC.s_trans including all);
-CREATE TRIGGER versioning_trigger_s_trans_fc BEFORE INSERT OR UPDATE OR DELETE ON SRC.s_trans_fc FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'SRC.trans_fc_hist', true);
----
 ---
 ---
 

@@ -21,8 +21,10 @@ date("YYYY-MM-DD") modification_date;
 string("\x01") record_source;
 string("\x01") trans_hk;
 string("\x01") effectiv_timerange;
-end s_trans
+end
 record
+string("\x01", maximum_length=10) trans_id;
+string("\x01", maximum_length=10) account_id;
 string("\x01") trans_hk;
-end h_trans
+end 
 end

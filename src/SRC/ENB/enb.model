@@ -9,12 +9,12 @@ Entity acct
 	{
 		FileName "completedacct.csv"
 		ColumnDelimiter ","
-		lineDelimiter "\\r\\n"
+		lineDelimiter "\\\\r\\\\n"
 	}
 	{
 	entityFields{
-		Field account_id [ type String length 10 short_describtion "Account ID" ]
-		Field district_id [ type Int ]
+		Field account_id [ type String length 10 short_describtion "Account ID" BusinessKey]
+		Field district_id [ type Int BusinessKey]
 		Field frequency [ type String length 100]
 		Field parseddate [ type Date dateFormat "YYYY-MM-DD"]
 		Field year [ type Int ]
@@ -29,11 +29,11 @@ metadata
 	{
 		FileName "completedcard.csv"
 		ColumnDelimiter ","
-		lineDelimiter "\\r\\n"
+		lineDelimiter "\\\\r\\\\n"
 	}{
 	entityFields{
-	Field card_id [ type String length 10]
-	Field disp_id[ type String length 10]
+	Field card_id [ type String length 10 BusinessKey]
+	Field disp_id[ type String length 10 BusinessKey]
 	Field card_type[ type String length 100 original_name "type" ]
 	Field year[ type Int ]
 	Field month[ type Int ]
@@ -47,10 +47,10 @@ metadata
 	{
 		FileName "completedclient.csv"
 		ColumnDelimiter ","
-		lineDelimiter "\\r\\n"
+		lineDelimiter "\\\\r\\\\n"
 	}{
 	entityFields{
-	Field client_id [ type String length 10]
+	Field client_id [ type String length 10 BusinessKey]
 	Field sex[ type String length 6]
 	Field fulldate [ type Date dateFormat 'YYYY-MM-DD']
 	Field day[ type Int ]
@@ -77,12 +77,12 @@ metadata
 	{
 		FileName "completeddisposition.csv"
 		ColumnDelimiter ","
-		lineDelimiter "\\r\\n"
+		lineDelimiter "\\\\r\\\\n"
 	}{
 	entityFields{
-		Field disp_id[ type String length 10]
-		Field client_id[ type String length 10]
-		Field account_id [ type String length 10]
+		Field disp_id[ type String length 10 BusinessKey]
+		Field client_id[ type String length 10 BusinessKey]
+		Field account_id [ type String length 10 BusinessKey]
 		Field user_type [ type String length 6 original_name "type" ]		
 	}
 },
@@ -92,11 +92,11 @@ metadata
 	{
 		FileName "completedloan.csv"
 		ColumnDelimiter ","
-		lineDelimiter "\\r\\n"
+		lineDelimiter "\\\\r\\\\n"
 	}{
 	entityFields{
-		Field loan_id[ type String length 10]
-		Field account_id[ type String length 10]
+		Field loan_id[ type String length 10 BusinessKey]
+		Field account_id[ type String length 10 BusinessKey]
 		Field amount[ type Int]
 		Field duration[ type Int]
 		Field payments[ type Int]
@@ -114,11 +114,11 @@ metadata
 	{
 		FileName "completedorder.csv"
 		ColumnDelimiter ","
-		lineDelimiter "\\r\\n"
+		lineDelimiter "\\\\r\\\\n"
 	}{
 	entityFields{
-		Field order_id[ type String length 10]
-		Field account_id[ type String length 10]
+		Field order_id[ type String length 10 BusinessKey]
+		Field account_id[ type String length 10 BusinessKey]
 		Field bank_to[ type String length 2]
 		Field account_to[ type Int]
 		Field amount[ type Decimal precision 32 scale 2]
@@ -131,12 +131,12 @@ metadata
 	{
 		FileName "completedtrans.csv"
 		ColumnDelimiter ","
-		lineDelimiter "\\r\\n"
+		lineDelimiter "\\\\r\\\\n"
 	}{
 	entityFields{
 		Field RUN_ID[ type Int  tableOnly ]
-		Field trans_id[ type String length 10]
-		Field account_id[ type String length 10]
+		Field trans_id[ type String length 10 BusinessKey]
+		Field account_id[ type String length 10 BusinessKey]
 		Field trans_type[ type String length 100 original_name "type"]
 		Field operation[ type String length 100]
 		Field amount[ type Decimal precision 32 scale 2]

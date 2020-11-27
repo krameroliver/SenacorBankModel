@@ -1,3 +1,5 @@
 record
+string("\x01", maximum_length=10) order_id;
+string("\x01", maximum_length=10) account_id;
 string("\x01") order_hk;
-end h_order
+end 

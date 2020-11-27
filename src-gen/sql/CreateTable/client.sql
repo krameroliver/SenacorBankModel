@@ -1,4 +1,4 @@
-CREATE TABLE SRC.s_client(
+CREATE TABLE SRC${SCHEMA_ID}.s_client(
 client_id VARCHAR(10 ),
 sex VARCHAR(6 ),
 fulldate DATE,
@@ -22,30 +22,18 @@ creation_date DATE,
 modification_date DATE,
 record_source VARCHAR(255),
 client_hk CHAR(32),
-effectiv_timerange tstzrange,
+effectiv_timerange daterange,
 PRIMARY KEY(client_hk,effectiv_timerange)
 );
 
-CREATE TABLE SRC.s_client_hist (like SRC.s_client including all);
-CREATE TRIGGER versioning_trigger_s_client BEFORE INSERT OR UPDATE OR DELETE ON SRC.s_client FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'SRC.client_hist', true);
+CREATE TABLE SRC${SCHEMA_ID}.s_client_hist (like SRC${SCHEMA_ID}.s_client including all);
+CREATE TRIGGER versioning_trigger_s_client BEFORE INSERT OR UPDATE OR DELETE ON SRC${SCHEMA_ID}.s_client FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'SRC${SCHEMA_ID}.client_hist', true);
 ---
-CREATE TABLE SRC.h_client(
+CREATE TABLE SRC${SCHEMA_ID}.h_client(
+client_id VARCHAR(10 ),
 client_hk CHAR(32),
 PRIMARY KEY(client_hk)
 );
----
-CREATE TABLE SRC.s_client_fc(
-creation_date DATE,
-modification_date DATE,
-record_source VARCHAR(255),
-client_hk CHAR(32),
-effectiv_timerange tstzrange,
-PRIMARY KEY(client_hk,effectiv_timerange)
-);
-
-CREATE TABLE SRC.s_client_fc_hist (like SRC.s_client including all);
-CREATE TRIGGER versioning_trigger_s_client_fc BEFORE INSERT OR UPDATE OR DELETE ON SRC.s_client_fc FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'SRC.client_fc_hist', true);
----
 ---
 ---
 
