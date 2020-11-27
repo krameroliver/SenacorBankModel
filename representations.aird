@@ -10,4 +10,5 @@
   <semanticResources>src/BIZ/ENB/darlehen.spec</semanticResources>
   <semanticResources>src/BIZ/ENB/GP.spec</semanticResources>
   <semanticResources>src/BIZ/ENB/link_loan_GP.spec</semanticResources>
+  <semanticResources>src/BIZ/ENB/link_GP_CC.spec</semanticResources>
 </viewpoint:DAnalysis>

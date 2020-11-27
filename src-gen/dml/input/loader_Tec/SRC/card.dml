@@ -1,0 +1,17 @@
+record
+record
+card_id string("\x01");
+disp_id string("\x01");
+card_type string("\x01");
+year decimal('\x01',0);
+month decimal('\x01',0);
+day decimal('\x01',0);
+fulldate date("YYYY-MM-DD");
+end s_card
+
+record
+record_source string("\x01");
+record_hk string("\x01");
+card_hk string("\x01");
+end h_card
+end

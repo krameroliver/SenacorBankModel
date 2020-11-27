@@ -4,7 +4,8 @@ vorname VARCHAR(24 ),
 nachname VARCHAR(24 ),
 geburtsdatum DATE,
 geschlecht integer,
-sozversnr VARCHAR(24 ),
+sozialversicherungsnummer VARCHAR(24 ),
+kreditkartenanzahl integer,
 creation_date DATE,
 modification_date DATE,
 processing_point VARCHAR(10),
@@ -38,7 +39,7 @@ CREATE TABLE BIZ.s_geschaeftspartner_fc_hist (like BIZ.s_geschaeftspartner inclu
 CREATE TRIGGER versioning_trigger_s_geschaeftspartner_fc BEFORE INSERT OR UPDATE OR DELETE ON BIZ.s_geschaeftspartner_fc FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'BIZ.geschaeftspartner_fc_hist', true);
 ---
 
-CREATE TABLE BIZ.s_geschaeftspartner_anschrift(
+CREATE TABLE BIZ.s_geschaeftspartner_Postalische_Addresse(
 creation_date DATE,
 modification_date DATE,
 processing_point VARCHAR(10),
@@ -48,10 +49,11 @@ geschaeftspartner_hk CHAR(32),
 effectiv_timerange tstzrange,
 PRIMARY KEY(geschaeftspartner_hk,PROCESSING_POINT)
 );
-CREATE TABLE BIZ.s_geschaeftspartner_anschrift_hist (like BIZ.s_geschaeftspartner_anschrift including all);
-CREATE TRIGGER versioning_trigger_BIZ_s_geschaeftspartner_anschrift BEFORE INSERT OR UPDATE OR DELETE ON BIZ.s_geschaeftspartner_anschrift FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'BIZ.s_geschaeftspartner_anschrift_hist', true);
+CREATE TABLE BIZ.s_geschaeftspartner_Postalische_Addresse_hist (like BIZ.s_geschaeftspartner_Postalische_Addresse including all);
+CREATE TRIGGER versioning_trigger_BIZ_s_geschaeftspartner_Postalische_Addresse BEFORE INSERT OR UPDATE OR DELETE ON BIZ.s_geschaeftspartner_Postalische_Addresse FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'BIZ.s_geschaeftspartner_Postalische_Addresse_hist', true);
 
-CREATE TABLE BIZ.s_geschaeftspartner_mobil_kontakt(
+CREATE TABLE BIZ.m_geschaeftspartner_Digitale_Addresse(
+kontakttyp integer,
 creation_date DATE,
 modification_date DATE,
 processing_point VARCHAR(10),
@@ -61,10 +63,10 @@ geschaeftspartner_hk CHAR(32),
 effectiv_timerange tstzrange,
 PRIMARY KEY(geschaeftspartner_hk,PROCESSING_POINT)
 );
-CREATE TABLE BIZ.s_geschaeftspartner_mobil_kontakt_hist (like BIZ.s_geschaeftspartner_mobil_kontakt including all);
-CREATE TRIGGER versioning_trigger_BIZ_s_geschaeftspartner_mobil_kontakt BEFORE INSERT OR UPDATE OR DELETE ON BIZ.s_geschaeftspartner_mobil_kontakt FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'BIZ.s_geschaeftspartner_mobil_kontakt_hist', true);
+CREATE TABLE BIZ.m_geschaeftspartner_Digitale_Addresse_hist (like BIZ.m_geschaeftspartner_Digitale_Addresse including all);
+CREATE TRIGGER versioning_trigger_m_BIZ_s_geschaeftspartner_Digitale_Addresse BEFORE INSERT OR UPDATE OR DELETE ON BIZ.m_geschaeftspartner_Digitale_Addresse FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'BIZ.m_geschaeftspartner_Digitale_Addresse_hist', true);
 ---
-CREATE TABLE BIZ.s_geschaeftspartner_anschrift_fc(
+CREATE TABLE BIZ.s_geschaeftspartner_Postalische_Addresse_fc(
 creation_date DATE,
 modification_date DATE,
 processing_point VARCHAR(10),
@@ -75,9 +77,9 @@ effectiv_timerange tstzrange,
 PRIMARY KEY(geschaeftspartner_hk,PROCESSING_POINT)
 );
 
-CREATE TABLE BIZ.s_geschaeftspartner_anschrift_fc_hist (like BIZ.s_geschaeftspartner_anschrift_fc including all);
-CREATE TRIGGER versioning_trigger_s_BIZ_s_geschaeftspartner_anschrift_fc BEFORE INSERT OR UPDATE OR DELETE ON BIZ.s_geschaeftspartner_anschrift_fc FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'BIZ.s_geschaeftspartner_anschrift_fc_hist', true);
-CREATE TABLE BIZ.s_geschaeftspartner_mobil_kontakt_fc(
+CREATE TABLE BIZ.s_geschaeftspartner_Postalische_Addresse_fc_hist (like BIZ.s_geschaeftspartner_Postalische_Addresse_fc including all);
+CREATE TRIGGER versioning_trigger_s_BIZ_s_geschaeftspartner_Postalische_Addresse_fc BEFORE INSERT OR UPDATE OR DELETE ON BIZ.s_geschaeftspartner_Postalische_Addresse_fc FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'BIZ.s_geschaeftspartner_Postalische_Addresse_fc_hist', true);
+CREATE TABLE BIZ.m_geschaeftspartner_Digitale_Addresse_fc(
 creation_date DATE,
 modification_date DATE,
 processing_point VARCHAR(10),
@@ -88,8 +90,8 @@ effectiv_timerange tstzrange,
 PRIMARY KEY(geschaeftspartner_hk,PROCESSING_POINT)
 );
 
-CREATE TABLE BIZ.s_geschaeftspartner_mobil_kontakt_fc_hist (like BIZ.s_geschaeftspartner_mobil_kontakt_fc including all);
-CREATE TRIGGER versioning_trigger_s_BIZ_s_geschaeftspartner_mobil_kontakt_fc BEFORE INSERT OR UPDATE OR DELETE ON BIZ.s_geschaeftspartner_mobil_kontakt_fc FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'BIZ.s_geschaeftspartner_mobil_kontakt_fc_hist', true);
+CREATE TABLE BIZ.s_geschaeftspartner_Digitale_Addresse_fc_hist (like BIZ.s_geschaeftspartner_Digitale_Addresse_fc including all);
+CREATE TRIGGER versioning_trigger_s_BIZ_s_geschaeftspartner_Digitale_Addresse_fc BEFORE INSERT OR UPDATE OR DELETE ON BIZ.s_geschaeftspartner_Digitale_Addresse_fc FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'BIZ.s_geschaeftspartner_Digitale_Addresse_fc_hist', true);
 ---
 CREATE TABLE BIZ.r_s_link_gp_darlehen_geschaeftspartner_darlehen(
 

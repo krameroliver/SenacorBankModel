@@ -1,10 +1,10 @@
 SpecPackage A
 
-Specification link_loan_GP
+Specification link_GP_CC
 {
 	target 
 	RuleType SingleFire
-	BusinessRule L_BIZ_darlehenGP
+	BusinessRule L_BIZ_GP_CC
 	targetRelationship ENB.Geschaeftspartner.link_GP_darlehen
 	PrimarySource ENB_SRC.loan
 	childSources[
