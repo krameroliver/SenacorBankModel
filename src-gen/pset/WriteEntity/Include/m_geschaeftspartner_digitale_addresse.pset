@@ -1,0 +1,7 @@
+$[[record
+entity_name "digitale_addresse_"
+hub_name    "h_geschaeftspartner"
+sat_name    "m_geschaeftspartner_digitale_addresse"
+tech_keys   [vector "geschaeftspartner_hk"]
+business_keys [vector ]
+]]

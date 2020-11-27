@@ -24,8 +24,9 @@ date("YYYY-MM-DD") modification_date;
 string("\x01") record_source;
 string("\x01") client_hk;
 string("\x01") effectiv_timerange;
-end s_client
+end
 record
+string("\x01", maximum_length=10) client_id;
 string("\x01") client_hk;
-end h_client
+end 
 end

@@ -1,3 +1,4 @@
 record
+string("\x01", maximum_length=10) client_id;
 string("\x01") client_hk;
-end h_client
+end 

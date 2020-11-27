@@ -57,7 +57,9 @@ Entity Geschaeftspartner{
 			IdentifyingFields:{kontakttyp}			
 		}
 	}Relationships{
+		
 		Relationship link_GP_darlehen
+		RelationshipDescription{ test }
 		{
 			ToEntity: Darlehen 			
 		}

@@ -3,13 +3,13 @@
 {2010001002|XXGdirectory|0|1|1|0|{@{}@}}
 {2010621005|XXGdataset|1|0|1|0|{@{30100001|XXparameter_set|@@@@{{30001002|XXparameter|_ab_semantic_schema|1|1|1|Hnl|@{0|}}
 {30001002|XXparameter|category|file|3|1|RHl||{0|}}
-{30001002|XXparameter|metadata|$\{AI_DML\}/acct.dml|7|9|Rnf|canonical record format|{0|}}
+{30001002|XXparameter|metadata|$\{AI_DML\}/loan.dml|7|9|Rnf|canonical record format|{0|}}
 {30001002|XXparameter|default_mode|Input|3|1|RHl||{0|}}
-{30001002|XXparameter|Layout|file:$SENACORBANK_DATA_DIRECTORY/completedacct.csv|28|2|RF$||{0|}}
+{30001002|XXparameter|Layout|file:$SENACORBANK_DATA_DIRECTORY/completedloan.csv|28|2|RF$||{0|}}
 {30001002|XXparameter|key|@19|9|F|field(s) to match during lookup|{0|}}
-{30001002|XXparameter|%delimiter|,|3|9|RP|@{0|}}
+{30001002|XXparameter|%delimiter|","|3|9|RP|@{0|}}
 {30001002|XXparameter|%delimiter.display_name|delimiter|3|9|P|@{0|}}
-{30001002|XXparameter|%row_end|\r\n|3|9|RP|@{0|}}
+{30001002|XXparameter|%row_end|"\\r\\n"|3|9|RP|@{0|}}
 {30001002|XXparameter|%row_end.display_name|row_end|3|9|P|@{0|}}
 {30001002|XXparameter|%skip_headerline|1|3|9|RP|@{0|}}
 {30001002|XXparameter|%skip_headerline.display_name|skip_headerline|3|9|P|@{0|}}

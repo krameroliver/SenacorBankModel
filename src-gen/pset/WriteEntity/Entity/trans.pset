@@ -1,0 +1,7 @@
+$[[record
+entity_name "trans"
+hub_name    "h_trans"
+sat_name    "s_trans"
+tech_keys   [vector "trans_hk"]
+business_keys [vector "trans_id","account_id"]
+]]

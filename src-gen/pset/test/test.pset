@@ -1,0 +1,56 @@
+$[[
+record
+readEntityConfig [record
+entity_name "trans"
+entity_type ""
+layer_type "BITEMPORAL"
+entity_desc [record
+main_table_description  [record
+table_name         "h_trans"
+historization_type "BITEMPORAL"
+tkey_fields        [vector "trans_hk"]
+bkey_fields        [vector "trans_id","account_id",]
+table_relations    [vector
+[record
+partner_table "s_trans"
+join_condition     "INNER JOIN"
+related_fields_vec [vector
+                          [record
+                           origin_field  "trans_hk"
+                           partner_field "trans_hk"
+]]]
+]]
+partner_table_descriptions [vector
+[record
+table_name "s_trans"
+historization_type "full"
+tkey_fields [vector "trans_hk"]
+bkey_fields	NULL
+table_relations    [vector]]
+]]]
+
+writeEntityConfigs [vector
+[record
+trans [record
+entity_name "trans"
+hub_name    "h_trans"
+sat_name    "s_trans"
+tech_keys   [vector "trans_hk"]
+business_keys [vector "trans_id","account_id"]
+]]
+
+
+
+
+
+]	
+]]
+
+
+
+
+
+
+
+
+

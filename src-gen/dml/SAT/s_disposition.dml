@@ -8,4 +8,4 @@ date("YYYY-MM-DD") modification_date;
 string("\x01") record_source;
 string("\x01") disposition_hk;
 string("\x01") effectiv_timerange;
-end s_disposition
+end

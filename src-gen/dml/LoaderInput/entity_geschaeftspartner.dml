@@ -1,0 +1,9 @@
+record
+string("\x01", maximum_length=18) kundennummer;
+string("\x01", maximum_length=24) vorname;
+string("\x01", maximum_length=24) nachname;
+date("YYYY-MM-DD") geburtsdatum;
+decimal('\x01',0) geschlecht;
+string("\x01", maximum_length=24) sozialversicherungsnummer;
+decimal('\x01',0) kreditkartenanzahl;
+end

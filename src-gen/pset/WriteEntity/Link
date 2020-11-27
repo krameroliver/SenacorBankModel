@@ -1,0 +1,7 @@
+$[[record
+entity_name "link_gp_darlehen"
+hub_name    "r_link_GP_darlehen__geschaeftspartner_darlehen"
+sat_name    "r_s_link_GP_darlehen__geschaeftspartner_darlehen"
+tech_keys   [vector "link_gp_darlehen_hk"]
+business_keys [vector ]
+]]
