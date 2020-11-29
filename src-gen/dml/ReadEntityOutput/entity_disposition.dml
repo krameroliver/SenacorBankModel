@@ -1,9 +1,0 @@
-record
-string("x01") disposition_hk;
-	record
-	string("\x01", maximum_length=10) disp_id;
-	string("\x01", maximum_length=10) client_id;
-	string("\x01", maximum_length=10) account_id;
-	string("\x01", maximum_length=6) user_type;
-end s_disposition;
-end

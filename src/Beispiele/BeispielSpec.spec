@@ -13,5 +13,6 @@ Specification Bsp
 		SecondaryJoinField { ENB_SRC.trans.account}	
 		JoinType LEFT 	
 		
+		
 	]
 }

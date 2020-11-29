@@ -1,14 +1,631 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" uid="_Qv8IwCg1EeuDq-BApjChFg" version="14.3.1.202003261200">
-  <semanticResources>src/Beispiele/BeispielSpec.spec</semanticResources>
-  <semanticResources>src/Beispiele/BeispielModel.model</semanticResources>
-  <semanticResources>src/Beispiele/Test.spec</semanticResources>
-  <semanticResources>src/MORPORK/ENB/enb.model</semanticResources>
-  <semanticResources>src/Jobnetz/EOB.jobnet</semanticResources>
-  <semanticResources>src/BIZ/ENB/enb.model</semanticResources>
-  <semanticResources>src/SRC/ENB/enb.model</semanticResources>
-  <semanticResources>src/BIZ/ENB/darlehen.spec</semanticResources>
-  <semanticResources>src/BIZ/ENB/GP.spec</semanticResources>
-  <semanticResources>src/BIZ/ENB/link_loan_GP.spec</semanticResources>
-  <semanticResources>src/BIZ/ENB/link_GP_CC.spec</semanticResources>
-</viewpoint:DAnalysis>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:logmodel="http://www.example.org/logmodel" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_Qv8IwCg1EeuDq-BApjChFg" selectedViews="_zaDOYDJcEeuVtMJLNK2GPw _MCDocDJpEeuVtMJLNK2GPw" version="14.3.1.202003261200">
+    <semanticResources>src/Beispiele/BeispielSpec.spec</semanticResources>
+    <semanticResources>src/Beispiele/BeispielModel.model</semanticResources>
+    <semanticResources>src/Beispiele/Test.spec</semanticResources>
+    <semanticResources>src/MORPORK/ENB/enb.model</semanticResources>
+    <semanticResources>src/Jobnetz/EOB.jobnet</semanticResources>
+    <semanticResources>src/BIZ/ENB/enb.model</semanticResources>
+    <semanticResources>src/SRC/ENB/enb.model</semanticResources>
+    <semanticResources>src/BIZ/ENB/darlehen.spec</semanticResources>
+    <semanticResources>src/BIZ/ENB/GP.spec</semanticResources>
+    <semanticResources>src/BIZ/ENB/link_loan_GP.spec</semanticResources>
+    <semanticResources>src/BIZ/ENB/link_GP_CC.spec</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_zaDOYDJcEeuVtMJLNK2GPw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='MyViewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_z9G4IDJcEeuVtMJLNK2GPw" name="new logmodel" repPath="#_z7mcQDJcEeuVtMJLNK2GPw" changeId="adbfb722-8f70-41fd-b163-258a101a446f">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='logmodel']"/>
+        <target xmi:type="logmodel:logpackage" href="src/BIZ/ENB/enb.model#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_2o6-IDJcEeuVtMJLNK2GPw" name="new logmodel" repPath="#_2o4h4DJcEeuVtMJLNK2GPw" changeId="07bf8004-b7a5-4827-9b19-80c560f51df0">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='logmodel']"/>
+        <target xmi:type="logmodel:logpackage" href="src/SRC/ENB/enb.model#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" uid="_MCDocDJpEeuVtMJLNK2GPw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_MebbYDJpEeuVtMJLNK2GPw" name="new Logmodel" repPath="#_MeZmMDJpEeuVtMJLNK2GPw" changeId="aeffc58a-28f0-42cc-a94b-ede1bd9569a6">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']"/>
+        <target xmi:type="logmodel:Entity" href="src/BIZ/ENB/enb.model#//@entity.0"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_o83VcDJqEeuVtMJLNK2GPw" name="new Logmodel" repPath="#_o82uYDJqEeuVtMJLNK2GPw" changeId="2e690a56-7e09-4527-8637-e6d12f6c94b8">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']"/>
+        <target xmi:type="logmodel:Entity" href="src/BIZ/ENB/enb.model#//@entity.1"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_cGGB4TJrEeuVtMJLNK2GPw" name="new Logmodel" repPath="#_cGEMsDJrEeuVtMJLNK2GPw" changeId="def8f8ba-c256-4aef-9a26-ffaedcd5fcb1">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']"/>
+        <target xmi:type="logmodel:logpackage" href="src/BIZ/ENB/enb.model#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_z7mcQDJcEeuVtMJLNK2GPw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_z_KtoDJcEeuVtMJLNK2GPw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_z_LUsDJcEeuVtMJLNK2GPw" type="Sirius" element="_z7mcQDJcEeuVtMJLNK2GPw" measurementUnit="Pixel">
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_z_LUsTJcEeuVtMJLNK2GPw"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_0AnfIDJcEeuVtMJLNK2GPw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_0AotQDJcEeuVtMJLNK2GPw"/>
+    </ownedAnnotationEntries>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='logmodel']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_z8NgQDJcEeuVtMJLNK2GPw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='logmodel']/@defaultLayer"/>
+    <target xmi:type="logmodel:logpackage" href="src/BIZ/ENB/enb.model#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_2o4h4DJcEeuVtMJLNK2GPw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_2o8zUDJcEeuVtMJLNK2GPw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_2o8zUTJcEeuVtMJLNK2GPw" type="Sirius" element="_2o4h4DJcEeuVtMJLNK2GPw" measurementUnit="Pixel">
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_2o8zUjJcEeuVtMJLNK2GPw"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_2pKOsDJcEeuVtMJLNK2GPw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_2pKOsTJcEeuVtMJLNK2GPw"/>
+    </ownedAnnotationEntries>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='logmodel']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_2o5I8DJcEeuVtMJLNK2GPw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='logmodel']/@defaultLayer"/>
+    <target xmi:type="logmodel:logpackage" href="src/SRC/ENB/enb.model#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_MeZmMDJpEeuVtMJLNK2GPw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_MebbYTJpEeuVtMJLNK2GPw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_MebbYjJpEeuVtMJLNK2GPw" type="Sirius" element="_MeZmMDJpEeuVtMJLNK2GPw" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_gA9xcDJqEeuVtMJLNK2GPw" type="2001" element="_f-XwcDJqEeuVtMJLNK2GPw">
+          <children xmi:type="notation:Node" xmi:id="_gA9xczJqEeuVtMJLNK2GPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_gA9xdDJqEeuVtMJLNK2GPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gBANsjJqEeuVtMJLNK2GPw" type="3017" element="_f-o2MDJqEeuVtMJLNK2GPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_gBANszJqEeuVtMJLNK2GPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gBANtDJqEeuVtMJLNK2GPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_gA9xcTJqEeuVtMJLNK2GPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gA9xcjJqEeuVtMJLNK2GPw" width="102" height="51"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_gA9xdTJqEeuVtMJLNK2GPw" type="2001" element="_f-qEUDJqEeuVtMJLNK2GPw">
+          <children xmi:type="notation:Node" xmi:id="_gA-_kDJqEeuVtMJLNK2GPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_gA-_kTJqEeuVtMJLNK2GPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gBANtTJqEeuVtMJLNK2GPw" type="3017" element="_f-qrYDJqEeuVtMJLNK2GPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_gBANtjJqEeuVtMJLNK2GPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gBANtzJqEeuVtMJLNK2GPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_gA9xdjJqEeuVtMJLNK2GPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gA9xdzJqEeuVtMJLNK2GPw" x="90" width="165" height="51"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_gA-_kjJqEeuVtMJLNK2GPw" type="2001" element="_f-qrYjJqEeuVtMJLNK2GPw">
+          <children xmi:type="notation:Node" xmi:id="_gA-_lTJqEeuVtMJLNK2GPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_gA-_ljJqEeuVtMJLNK2GPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gBANuDJqEeuVtMJLNK2GPw" type="3017" element="_f-rScDJqEeuVtMJLNK2GPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_gBANuTJqEeuVtMJLNK2GPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gBANujJqEeuVtMJLNK2GPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_gA-_kzJqEeuVtMJLNK2GPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gA-_lDJqEeuVtMJLNK2GPw" x="180" width="66" height="51"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_gA-_lzJqEeuVtMJLNK2GPw" type="2001" element="_f-rScjJqEeuVtMJLNK2GPw">
+          <children xmi:type="notation:Node" xmi:id="_gA-_mjJqEeuVtMJLNK2GPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_gA-_mzJqEeuVtMJLNK2GPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gBANuzJqEeuVtMJLNK2GPw" type="3017" element="_f-r5gDJqEeuVtMJLNK2GPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_gBANvDJqEeuVtMJLNK2GPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gBANvTJqEeuVtMJLNK2GPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_gA-_mDJqEeuVtMJLNK2GPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gA-_mTJqEeuVtMJLNK2GPw" x="270" width="69" height="51"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_gA-_nDJqEeuVtMJLNK2GPw" type="2001" element="_f-r5gjJqEeuVtMJLNK2GPw">
+          <children xmi:type="notation:Node" xmi:id="_gA-_nzJqEeuVtMJLNK2GPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_gA-_oDJqEeuVtMJLNK2GPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gBA0wDJqEeuVtMJLNK2GPw" type="3017" element="_f-sgkDJqEeuVtMJLNK2GPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_gBA0wTJqEeuVtMJLNK2GPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gBA0wjJqEeuVtMJLNK2GPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_gA-_nTJqEeuVtMJLNK2GPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gA-_njJqEeuVtMJLNK2GPw" x="360" width="76" height="51"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_gA_moDJqEeuVtMJLNK2GPw" type="2001" element="_f-sgkjJqEeuVtMJLNK2GPw">
+          <children xmi:type="notation:Node" xmi:id="_gA_mozJqEeuVtMJLNK2GPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_gA_mpDJqEeuVtMJLNK2GPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gBA0wzJqEeuVtMJLNK2GPw" type="3017" element="_f-tHoDJqEeuVtMJLNK2GPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_gBA0xDJqEeuVtMJLNK2GPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gBA0xTJqEeuVtMJLNK2GPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_gA_moTJqEeuVtMJLNK2GPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gA_mojJqEeuVtMJLNK2GPw" x="450" width="115" height="51"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_gA_mpTJqEeuVtMJLNK2GPw" type="2001" element="_f-tHojJqEeuVtMJLNK2GPw">
+          <children xmi:type="notation:Node" xmi:id="_gA_mqDJqEeuVtMJLNK2GPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_gA_mqTJqEeuVtMJLNK2GPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gBBb0DJqEeuVtMJLNK2GPw" type="3017" element="_f-tusDJqEeuVtMJLNK2GPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_gBBb0TJqEeuVtMJLNK2GPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gBBb0jJqEeuVtMJLNK2GPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_gA_mpjJqEeuVtMJLNK2GPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gA_mpzJqEeuVtMJLNK2GPw" x="540" width="69" height="51"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_gA_mqjJqEeuVtMJLNK2GPw" type="2001" element="_f-tusjJqEeuVtMJLNK2GPw">
+          <children xmi:type="notation:Node" xmi:id="_gA_mrTJqEeuVtMJLNK2GPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_gA_mrjJqEeuVtMJLNK2GPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gBBb0zJqEeuVtMJLNK2GPw" type="3017" element="_f-uVwDJqEeuVtMJLNK2GPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_gBBb1DJqEeuVtMJLNK2GPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gBBb1TJqEeuVtMJLNK2GPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_gA_mqzJqEeuVtMJLNK2GPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gA_mrDJqEeuVtMJLNK2GPw" x="630" width="77" height="51"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_gA_mrzJqEeuVtMJLNK2GPw" type="2001" element="_f-uVwjJqEeuVtMJLNK2GPw">
+          <children xmi:type="notation:Node" xmi:id="_gBANsDJqEeuVtMJLNK2GPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_gBANsTJqEeuVtMJLNK2GPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gBBb1jJqEeuVtMJLNK2GPw" type="3017" element="_f-u80DJqEeuVtMJLNK2GPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_gBBb1zJqEeuVtMJLNK2GPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gBBb2DJqEeuVtMJLNK2GPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_gA_msDJqEeuVtMJLNK2GPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gA_msTJqEeuVtMJLNK2GPw" x="720" width="74" height="51"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_MebbYzJpEeuVtMJLNK2GPw"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_MemagTJpEeuVtMJLNK2GPw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_MemagjJpEeuVtMJLNK2GPw"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_f-XwcDJqEeuVtMJLNK2GPw" name="Darlehen" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="logmodel:Entity" href="src/BIZ/ENB/enb.model#//@entity.0"/>
+      <semanticElements xmi:type="logmodel:Entity" href="src/BIZ/ENB/enb.model#//@entity.0"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_f-o2MDJqEeuVtMJLNK2GPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_f-qEUDJqEeuVtMJLNK2GPw" name="Geschaeftspartner" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="logmodel:Entity" href="src/BIZ/ENB/enb.model#//@entity.1"/>
+      <semanticElements xmi:type="logmodel:Entity" href="src/BIZ/ENB/enb.model#//@entity.1"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_f-qrYDJqEeuVtMJLNK2GPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_f-qrYjJqEeuVtMJLNK2GPw" name="acct" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.0"/>
+      <semanticElements xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.0"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_f-rScDJqEeuVtMJLNK2GPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_f-rScjJqEeuVtMJLNK2GPw" name="card" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.1"/>
+      <semanticElements xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.1"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_f-r5gDJqEeuVtMJLNK2GPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_f-r5gjJqEeuVtMJLNK2GPw" name="client" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.2"/>
+      <semanticElements xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.2"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_f-sgkDJqEeuVtMJLNK2GPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_f-sgkjJqEeuVtMJLNK2GPw" name="disposition" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.3"/>
+      <semanticElements xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.3"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_f-tHoDJqEeuVtMJLNK2GPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_f-tHojJqEeuVtMJLNK2GPw" name="loan" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.4"/>
+      <semanticElements xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.4"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_f-tusDJqEeuVtMJLNK2GPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_f-tusjJqEeuVtMJLNK2GPw" name="order" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.5"/>
+      <semanticElements xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.5"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_f-uVwDJqEeuVtMJLNK2GPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_f-uVwjJqEeuVtMJLNK2GPw" name="trans" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.6"/>
+      <semanticElements xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.6"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_f-u80DJqEeuVtMJLNK2GPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_MeaNQDJpEeuVtMJLNK2GPw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer"/>
+    <target xmi:type="logmodel:Entity" href="src/BIZ/ENB/enb.model#//@entity.0"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_o82uYDJqEeuVtMJLNK2GPw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_o838gDJqEeuVtMJLNK2GPw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_o838gTJqEeuVtMJLNK2GPw" type="Sirius" element="_o82uYDJqEeuVtMJLNK2GPw" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_o8-qMDJqEeuVtMJLNK2GPw" type="2001" element="_o84jkDJqEeuVtMJLNK2GPw">
+          <children xmi:type="notation:Node" xmi:id="_o8_RQDJqEeuVtMJLNK2GPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_o8_RQTJqEeuVtMJLNK2GPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_o9EJwDJqEeuVtMJLNK2GPw" type="3017" element="_o84jkTJqEeuVtMJLNK2GPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_o9EJwTJqEeuVtMJLNK2GPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o9EJwjJqEeuVtMJLNK2GPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_o8-qMTJqEeuVtMJLNK2GPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o8-qMjJqEeuVtMJLNK2GPw" width="102" height="51"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_o8_RQjJqEeuVtMJLNK2GPw" type="2001" element="_o85KoTJqEeuVtMJLNK2GPw">
+          <children xmi:type="notation:Node" xmi:id="_o8_4UDJqEeuVtMJLNK2GPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_o8_4UTJqEeuVtMJLNK2GPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_o9EJwzJqEeuVtMJLNK2GPw" type="3017" element="_o85KojJqEeuVtMJLNK2GPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_o9EJxDJqEeuVtMJLNK2GPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o9EJxTJqEeuVtMJLNK2GPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_o8_RQzJqEeuVtMJLNK2GPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o8_RRDJqEeuVtMJLNK2GPw" x="90" width="165" height="51"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_o9AfYDJqEeuVtMJLNK2GPw" type="2001" element="_o85xsDJqEeuVtMJLNK2GPw">
+          <children xmi:type="notation:Node" xmi:id="_o9AfYzJqEeuVtMJLNK2GPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_o9AfZDJqEeuVtMJLNK2GPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_o9Ew0DJqEeuVtMJLNK2GPw" type="3017" element="_o85xsTJqEeuVtMJLNK2GPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_o9Ew0TJqEeuVtMJLNK2GPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o9Ew0jJqEeuVtMJLNK2GPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_o9AfYTJqEeuVtMJLNK2GPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o9AfYjJqEeuVtMJLNK2GPw" x="180" width="66" height="51"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_o9BGcDJqEeuVtMJLNK2GPw" type="2001" element="_o86YwTJqEeuVtMJLNK2GPw">
+          <children xmi:type="notation:Node" xmi:id="_o9BGczJqEeuVtMJLNK2GPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_o9BGdDJqEeuVtMJLNK2GPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_o9FX4DJqEeuVtMJLNK2GPw" type="3017" element="_o86YwjJqEeuVtMJLNK2GPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_o9FX4TJqEeuVtMJLNK2GPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o9FX4jJqEeuVtMJLNK2GPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_o9BGcTJqEeuVtMJLNK2GPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o9BGcjJqEeuVtMJLNK2GPw" x="270" width="69" height="51"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_o9BGdTJqEeuVtMJLNK2GPw" type="2001" element="_o86YxDJqEeuVtMJLNK2GPw">
+          <children xmi:type="notation:Node" xmi:id="_o9BtgDJqEeuVtMJLNK2GPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_o9BtgTJqEeuVtMJLNK2GPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_o9FX4zJqEeuVtMJLNK2GPw" type="3017" element="_o86_0DJqEeuVtMJLNK2GPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_o9FX5DJqEeuVtMJLNK2GPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o9FX5TJqEeuVtMJLNK2GPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_o9BGdjJqEeuVtMJLNK2GPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o9BGdzJqEeuVtMJLNK2GPw" x="360" width="76" height="51"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_o9BtgjJqEeuVtMJLNK2GPw" type="2001" element="_o86_0jJqEeuVtMJLNK2GPw">
+          <children xmi:type="notation:Node" xmi:id="_o9CUkDJqEeuVtMJLNK2GPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_o9CUkTJqEeuVtMJLNK2GPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_o9F-8DJqEeuVtMJLNK2GPw" type="3017" element="_o86_0zJqEeuVtMJLNK2GPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_o9F-8TJqEeuVtMJLNK2GPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o9F-8jJqEeuVtMJLNK2GPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_o9BtgzJqEeuVtMJLNK2GPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o9BthDJqEeuVtMJLNK2GPw" x="450" width="115" height="51"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_o9CUkjJqEeuVtMJLNK2GPw" type="2001" element="_o87m4TJqEeuVtMJLNK2GPw">
+          <children xmi:type="notation:Node" xmi:id="_o9C7oDJqEeuVtMJLNK2GPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_o9C7oTJqEeuVtMJLNK2GPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_o9GmADJqEeuVtMJLNK2GPw" type="3017" element="_o87m4jJqEeuVtMJLNK2GPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_o9GmATJqEeuVtMJLNK2GPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o9GmAjJqEeuVtMJLNK2GPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_o9CUkzJqEeuVtMJLNK2GPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o9CUlDJqEeuVtMJLNK2GPw" x="540" width="69" height="51"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_o9C7ojJqEeuVtMJLNK2GPw" type="2001" element="_o88N8DJqEeuVtMJLNK2GPw">
+          <children xmi:type="notation:Node" xmi:id="_o9DisDJqEeuVtMJLNK2GPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_o9DisTJqEeuVtMJLNK2GPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_o9HNEDJqEeuVtMJLNK2GPw" type="3017" element="_o881ADJqEeuVtMJLNK2GPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_o9HNETJqEeuVtMJLNK2GPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o9HNEjJqEeuVtMJLNK2GPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_o9C7ozJqEeuVtMJLNK2GPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o9C7pDJqEeuVtMJLNK2GPw" x="630" width="77" height="51"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_o9DisjJqEeuVtMJLNK2GPw" type="2001" element="_o881AjJqEeuVtMJLNK2GPw">
+          <children xmi:type="notation:Node" xmi:id="_o9DitTJqEeuVtMJLNK2GPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_o9DitjJqEeuVtMJLNK2GPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_o9HNEzJqEeuVtMJLNK2GPw" type="3017" element="_o89cEDJqEeuVtMJLNK2GPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_o9HNFDJqEeuVtMJLNK2GPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o9HNFTJqEeuVtMJLNK2GPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_o9DiszJqEeuVtMJLNK2GPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_o9DitDJqEeuVtMJLNK2GPw" x="720" width="74" height="51"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_o838gjJqEeuVtMJLNK2GPw"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_o89cEjJqEeuVtMJLNK2GPw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_o89cEzJqEeuVtMJLNK2GPw"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_o84jkDJqEeuVtMJLNK2GPw" name="Darlehen" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="logmodel:Entity" href="src/BIZ/ENB/enb.model#//@entity.0"/>
+      <semanticElements xmi:type="logmodel:Entity" href="src/BIZ/ENB/enb.model#//@entity.0"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_o84jkTJqEeuVtMJLNK2GPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_o85KoTJqEeuVtMJLNK2GPw" name="Geschaeftspartner" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="logmodel:Entity" href="src/BIZ/ENB/enb.model#//@entity.1"/>
+      <semanticElements xmi:type="logmodel:Entity" href="src/BIZ/ENB/enb.model#//@entity.1"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_o85KojJqEeuVtMJLNK2GPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_o85xsDJqEeuVtMJLNK2GPw" name="acct" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.0"/>
+      <semanticElements xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.0"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_o85xsTJqEeuVtMJLNK2GPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_o86YwTJqEeuVtMJLNK2GPw" name="card" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.1"/>
+      <semanticElements xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.1"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_o86YwjJqEeuVtMJLNK2GPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_o86YxDJqEeuVtMJLNK2GPw" name="client" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.2"/>
+      <semanticElements xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.2"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_o86_0DJqEeuVtMJLNK2GPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_o86_0jJqEeuVtMJLNK2GPw" name="disposition" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.3"/>
+      <semanticElements xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.3"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_o86_0zJqEeuVtMJLNK2GPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_o87m4TJqEeuVtMJLNK2GPw" name="loan" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.4"/>
+      <semanticElements xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.4"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_o87m4jJqEeuVtMJLNK2GPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_o88N8DJqEeuVtMJLNK2GPw" name="order" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.5"/>
+      <semanticElements xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.5"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_o881ADJqEeuVtMJLNK2GPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_o881AjJqEeuVtMJLNK2GPw" name="trans" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.6"/>
+      <semanticElements xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.6"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_o89cEDJqEeuVtMJLNK2GPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_o82uYTJqEeuVtMJLNK2GPw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer"/>
+    <target xmi:type="logmodel:Entity" href="src/BIZ/ENB/enb.model#//@entity.1"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_cGEMsDJrEeuVtMJLNK2GPw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_cGHQADJrEeuVtMJLNK2GPw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_cGHQATJrEeuVtMJLNK2GPw" type="Sirius" element="_cGEMsDJrEeuVtMJLNK2GPw" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_cHRGkDJrEeuVtMJLNK2GPw" visible="false" type="2001" element="_cGmYMDJrEeuVtMJLNK2GPw">
+          <children xmi:type="notation:Node" xmi:id="_cHRtoDJrEeuVtMJLNK2GPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_cHRtoTJrEeuVtMJLNK2GPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cHZCYjJrEeuVtMJLNK2GPw" type="3017" element="_cHFgYDJrEeuVtMJLNK2GPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cHZCYzJrEeuVtMJLNK2GPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cHZCZDJrEeuVtMJLNK2GPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_cHRGkTJrEeuVtMJLNK2GPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cHRGkjJrEeuVtMJLNK2GPw" width="102" height="51"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_cHSUsDJrEeuVtMJLNK2GPw" visible="false" type="2001" element="_cHGugTJrEeuVtMJLNK2GPw">
+          <children xmi:type="notation:Node" xmi:id="_cHS7wDJrEeuVtMJLNK2GPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_cHS7wTJrEeuVtMJLNK2GPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cHZpcDJrEeuVtMJLNK2GPw" type="3017" element="_cHHVkDJrEeuVtMJLNK2GPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cHZpcTJrEeuVtMJLNK2GPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cHZpcjJrEeuVtMJLNK2GPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_cHSUsTJrEeuVtMJLNK2GPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cHSUsjJrEeuVtMJLNK2GPw" x="90" width="165" height="51"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_cHTi0DJrEeuVtMJLNK2GPw" visible="false" type="2001" element="_cHH8oDJrEeuVtMJLNK2GPw">
+          <children xmi:type="notation:Node" xmi:id="_cHUJ4DJrEeuVtMJLNK2GPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_cHUJ4TJrEeuVtMJLNK2GPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cHaQgDJrEeuVtMJLNK2GPw" type="3017" element="_cHIjsDJrEeuVtMJLNK2GPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cHaQgTJrEeuVtMJLNK2GPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cHaQgjJrEeuVtMJLNK2GPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_cHTi0TJrEeuVtMJLNK2GPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cHTi0jJrEeuVtMJLNK2GPw" x="180" y="200" width="66" height="51"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_cHUw8DJrEeuVtMJLNK2GPw" visible="false" type="2001" element="_cHJKwDJrEeuVtMJLNK2GPw">
+          <children xmi:type="notation:Node" xmi:id="_cHVYADJrEeuVtMJLNK2GPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_cHVYATJrEeuVtMJLNK2GPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cHaQgzJrEeuVtMJLNK2GPw" type="3017" element="_cHJKwTJrEeuVtMJLNK2GPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cHaQhDJrEeuVtMJLNK2GPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cHaQhTJrEeuVtMJLNK2GPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_cHUw8TJrEeuVtMJLNK2GPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cHUw8jJrEeuVtMJLNK2GPw" x="345" y="190" width="69" height="51"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_cHV_EDJrEeuVtMJLNK2GPw" visible="false" type="2001" element="_cHJKwzJrEeuVtMJLNK2GPw">
+          <children xmi:type="notation:Node" xmi:id="_cHWmIDJrEeuVtMJLNK2GPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_cHWmITJrEeuVtMJLNK2GPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cHa3kDJrEeuVtMJLNK2GPw" type="3017" element="_cHJx0DJrEeuVtMJLNK2GPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cHa3kTJrEeuVtMJLNK2GPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cHa3kjJrEeuVtMJLNK2GPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_cHV_ETJrEeuVtMJLNK2GPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cHV_EjJrEeuVtMJLNK2GPw" x="360" width="76" height="51"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_cHWmIjJrEeuVtMJLNK2GPw" visible="false" type="2001" element="_cHKY4DJrEeuVtMJLNK2GPw">
+          <children xmi:type="notation:Node" xmi:id="_cHXNMDJrEeuVtMJLNK2GPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_cHXNMTJrEeuVtMJLNK2GPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cHbeoDJrEeuVtMJLNK2GPw" type="3017" element="_cHKY4TJrEeuVtMJLNK2GPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cHbeoTJrEeuVtMJLNK2GPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cHbeojJrEeuVtMJLNK2GPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_cHWmIzJrEeuVtMJLNK2GPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cHWmJDJrEeuVtMJLNK2GPw" x="450" width="115" height="51"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_cHXNMjJrEeuVtMJLNK2GPw" visible="false" type="2001" element="_cHK_8TJrEeuVtMJLNK2GPw">
+          <children xmi:type="notation:Node" xmi:id="_cHX0QDJrEeuVtMJLNK2GPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_cHX0QTJrEeuVtMJLNK2GPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cHbeozJrEeuVtMJLNK2GPw" type="3017" element="_cHLnADJrEeuVtMJLNK2GPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cHbepDJrEeuVtMJLNK2GPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cHbepTJrEeuVtMJLNK2GPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_cHXNMzJrEeuVtMJLNK2GPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cHXNNDJrEeuVtMJLNK2GPw" x="540" width="69" height="51"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_cHX0QjJrEeuVtMJLNK2GPw" visible="false" type="2001" element="_cHMOETJrEeuVtMJLNK2GPw">
+          <children xmi:type="notation:Node" xmi:id="_cHYbUDJrEeuVtMJLNK2GPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_cHYbUTJrEeuVtMJLNK2GPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cHcswDJrEeuVtMJLNK2GPw" type="3017" element="_cHMOEjJrEeuVtMJLNK2GPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cHcswTJrEeuVtMJLNK2GPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cHcswjJrEeuVtMJLNK2GPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_cHX0QzJrEeuVtMJLNK2GPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cHX0RDJrEeuVtMJLNK2GPw" x="630" width="77" height="51"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_cHYbUjJrEeuVtMJLNK2GPw" visible="false" type="2001" element="_cHNcMDJrEeuVtMJLNK2GPw">
+          <children xmi:type="notation:Node" xmi:id="_cHZCYDJrEeuVtMJLNK2GPw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_cHZCYTJrEeuVtMJLNK2GPw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cHdT0DJrEeuVtMJLNK2GPw" type="3017" element="_cHNcMTJrEeuVtMJLNK2GPw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cHdT0TJrEeuVtMJLNK2GPw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cHdT0jJrEeuVtMJLNK2GPw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_cHYbUzJrEeuVtMJLNK2GPw" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cHYbVDJrEeuVtMJLNK2GPw" x="720" width="74" height="51"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_cGHQAjJrEeuVtMJLNK2GPw"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_cHPRYDJrEeuVtMJLNK2GPw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_cHPRYTJrEeuVtMJLNK2GPw"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_cGmYMDJrEeuVtMJLNK2GPw" name="Darlehen" visible="false" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="logmodel:Entity" href="src/BIZ/ENB/enb.model#//@entity.0"/>
+      <semanticElements xmi:type="logmodel:Entity" href="src/BIZ/ENB/enb.model#//@entity.0"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_cHFgYDJrEeuVtMJLNK2GPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_cHGugTJrEeuVtMJLNK2GPw" name="Geschaeftspartner" visible="false" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="logmodel:Entity" href="src/BIZ/ENB/enb.model#//@entity.1"/>
+      <semanticElements xmi:type="logmodel:Entity" href="src/BIZ/ENB/enb.model#//@entity.1"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_cHHVkDJrEeuVtMJLNK2GPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_cHH8oDJrEeuVtMJLNK2GPw" name="acct" visible="false" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.0"/>
+      <semanticElements xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_cHIjsDJrEeuVtMJLNK2GPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_cHJKwDJrEeuVtMJLNK2GPw" name="card" visible="false" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.1"/>
+      <semanticElements xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_cHJKwTJrEeuVtMJLNK2GPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_cHJKwzJrEeuVtMJLNK2GPw" name="client" visible="false" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.2"/>
+      <semanticElements xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.2"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_cHJx0DJrEeuVtMJLNK2GPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_cHKY4DJrEeuVtMJLNK2GPw" name="disposition" visible="false" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.3"/>
+      <semanticElements xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.3"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_cHKY4TJrEeuVtMJLNK2GPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_cHK_8TJrEeuVtMJLNK2GPw" name="loan" visible="false" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.4"/>
+      <semanticElements xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.4"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_cHLnADJrEeuVtMJLNK2GPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_cHMOETJrEeuVtMJLNK2GPw" name="order" visible="false" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.5"/>
+      <semanticElements xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.5"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_cHMOEjJrEeuVtMJLNK2GPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_cHNcMDJrEeuVtMJLNK2GPw" name="trans" visible="false" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.6"/>
+      <semanticElements xmi:type="logmodel:Entity" href="src/SRC/ENB/enb.model#//@entity.6"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_cHNcMTJrEeuVtMJLNK2GPw" labelSize="12" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer/@nodeMappings[name='']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_cGEMsTJrEeuVtMJLNK2GPw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='LogModel']/@ownedRepresentations[name='Logmodel']/@defaultLayer"/>
+    <target xmi:type="logmodel:logpackage" href="src/BIZ/ENB/enb.model#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

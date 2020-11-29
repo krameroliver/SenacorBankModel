@@ -1,8 +1,0 @@
-record
-string("\x01", maximum_length=10) order_id;
-string("\x01", maximum_length=10) account_id;
-string("\x01", maximum_length=2) bank_to;
-decimal('\x01',0) account_to;
-decimal('\x01',32.2) amount;
-string("\x01", maximum_length=100) k_symbol;
-end

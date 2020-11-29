@@ -1,0 +1,9 @@
+record
+account_id string("\x01");
+district_id decimal('\x01',0);
+frequency string("\x01");
+parseddate date("YYYY-MM-DD");
+year decimal('\x01',0);
+month decimal('\x01',0);
+day decimal('\x01',0);
+end

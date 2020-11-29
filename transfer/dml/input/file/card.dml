@@ -1,0 +1,9 @@
+record
+card_id string("\x01");
+disp_id string("\x01");
+card_type string("\x01");
+year decimal('\x01',0);
+month decimal('\x01',0);
+day decimal('\x01',0);
+fulldate date("YYYY-MM-DD");
+end

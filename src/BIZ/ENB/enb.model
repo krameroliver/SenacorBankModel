@@ -59,7 +59,6 @@ Entity Geschaeftspartner{
 	}Relationships{
 		
 		Relationship link_GP_darlehen
-		RelationshipDescription{ test }
 		{
 			ToEntity: Darlehen 			
 		}
