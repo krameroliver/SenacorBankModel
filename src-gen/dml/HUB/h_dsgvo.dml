@@ -1,0 +1,3 @@
+record
+string("\x01") dsgvo_hk;
+end 

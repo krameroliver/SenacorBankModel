@@ -12,6 +12,7 @@
     <semanticResources>src/BIZ/ENB/GP.spec</semanticResources>
     <semanticResources>src/BIZ/ENB/link_loan_GP.spec</semanticResources>
     <semanticResources>src/BIZ/ENB/link_GP_CC.spec</semanticResources>
+    <semanticResources>src/BIZ/ENB/DSGVO.spec</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_zaDOYDJcEeuVtMJLNK2GPw">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/logmodel.viewpoint.design/description/viewpoint.odesign#//@ownedViewpoints[name='MyViewpoint']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_z9G4IDJcEeuVtMJLNK2GPw" name="new logmodel" repPath="#_z7mcQDJcEeuVtMJLNK2GPw" changeId="adbfb722-8f70-41fd-b163-258a101a446f">

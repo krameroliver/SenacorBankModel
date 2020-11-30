@@ -1,0 +1,3 @@
+record
+string("\x01") kreditkarte_hk;
+end 

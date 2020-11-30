@@ -1,0 +1,7 @@
+$[[record
+entity_name "link_gp_cc"
+hub_name    "r_link_GP_CC__geschaeftspartner_kreditkarte"
+sat_name    "r_s_link_GP_CC__geschaeftspartner_kreditkarte"
+tech_keys   [vector "link_gp_cc_hk"]
+business_keys [vector ]
+]]

@@ -1,4 +1,4 @@
-CREATE TABLE SRC${SCHEMA_ID}.s_order(
+CREATE TABLE SRCSCHEMA_ID.s_order(
 order_id VARCHAR(10 ),
 account_id VARCHAR(10 ),
 bank_to VARCHAR(2 ),
@@ -7,21 +7,20 @@ amount NUMERIC(20 ,10),
 k_symbol VARCHAR(100 ),
 creation_date DATE,
 modification_date DATE,
-record_source VARCHAR(255),
+
+record_hk CHAR(32),
 order_hk CHAR(32),
 effectiv_timerange daterange,
-PRIMARY KEY(order_hk,effectiv_timerange)
+PRIMARY KEY(order_hk)
 );
-
-CREATE TABLE SRC${SCHEMA_ID}.s_order_hist (like SRC${SCHEMA_ID}.s_order including all);
-CREATE TRIGGER versioning_trigger_s_order BEFORE INSERT OR UPDATE OR DELETE ON SRC${SCHEMA_ID}.s_order FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'SRC${SCHEMA_ID}.order_hist', true);
----
-CREATE TABLE SRC${SCHEMA_ID}.h_order(
-order_id VARCHAR(10 ),
-account_id VARCHAR(10 ),
+COMMIT;
+CREATE TABLE SRCSCHEMA_ID.s_order_hist (like SRCSCHEMA_ID.s_order including all);
+CREATE TRIGGER versioning_trigger_s_order BEFORE INSERT OR UPDATE OR DELETE ON SRCSCHEMA_ID.s_order FOR EACH ROW EXECUTE PROCEDURE versioning('effectiv_timerange', 'SRCSCHEMA_ID.s_order_hist', true);
+COMMIT;
+CREATE TABLE SRCSCHEMA_ID.h_order(
 order_hk CHAR(32),
 PRIMARY KEY(order_hk)
 );
----
----
+COMMIT;
 
+COMMIT;

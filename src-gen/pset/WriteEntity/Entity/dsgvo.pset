@@ -1,0 +1,7 @@
+$[[record
+entity_name "dsgvo"
+hub_name    "h_dsgvo"
+sat_name    "s_dsgvo"
+tech_keys   [vector "dsgvo_hk"]
+business_keys [vector ]
+]]

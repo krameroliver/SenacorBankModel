@@ -1,0 +1,16 @@
+record
+string("\x01") kundennummer;
+string("\x01") anrede;
+string("\x01") vorname;
+string("\x01") nachname;
+date("YYYY-MM-DD") geburtsdatum;
+date("YYYY-MM-DD") sterbedatum;
+decimal('\x01',0) geschlecht;
+string("\x01") sozialversicherungsnummer;
+decimal('\x01',0) kreditkartenanzahl;
+date("YYYY-MM-DD") creation_date;
+date("YYYY-MM-DD") modification_date;
+string("\x01") record_source;
+string("\x01") geschaeftspartner_hk;
+string("\x01") effectiv_timerange;
+end

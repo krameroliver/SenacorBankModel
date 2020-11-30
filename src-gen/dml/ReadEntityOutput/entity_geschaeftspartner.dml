@@ -1,0 +1,25 @@
+record
+string("x01") geschaeftspartner_hk;
+	record
+	string("\x01") kundennummer;
+	string("\x01") anrede;
+	string("\x01") vorname;
+	string("\x01") nachname;
+	date("YYYY-MM-DD") geburtsdatum;
+	date("YYYY-MM-DD") sterbedatum;
+	decimal('\x01',0) geschlecht;
+	string("\x01") sozialversicherungsnummer;
+	decimal('\x01',0) kreditkartenanzahl;
+end s_geschaeftspartner;
+record
+	string("\x01") addresse1;
+	string("\x01") addresse2;
+	string("\x01") stadt;
+	string("\x01") bundesland;
+	decimal('\x01',0) postleitzahl;
+end s_geschaeftspartner_postalische_addresse;
+record
+	decimal('\x01',0) kontakttyp;
+	string("\x01") kontaktinfo;
+end s_geschaeftspartner_digitale_addresse;
+end

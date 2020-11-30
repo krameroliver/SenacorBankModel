@@ -1,4 +1,4 @@
-SpecPackage A
+SpecPackage ENB
 
 Specification GP
 {
@@ -13,12 +13,12 @@ Specification GP
 		SecondaryJoinField{ENB_SRC.disposition.client_id}
 		JoinType INNER
 		[
-			ENB_SRC.card 
-			VectoryKeys {ENB_SRC.card.card_id, ENB_SRC.card.disp_id}
+			ENB_SRC.card
+			//Filter: Anzeige nur für Owner --> User soll nicht mit Karte verbunden werden
+			VectoryKeys {ENB_SRC.card.disp_id}
 			PrimaryJoinFields{ENB_SRC.disposition.disp_id}
-			SecondaryJoinField{ENB_SRC.card.disp_id}
-			JoinType LEFT
-			
+			SecondaryJoinField{ENB_SRC.card.disp_id}			
+			JoinType INNER			
 		]
 	]
 	

@@ -1,4 +1,4 @@
-SpecPackage A
+SpecPackage ENB
 
 Specification link_GP_CC
 {
@@ -7,8 +7,7 @@ Specification link_GP_CC
 	BusinessRule L_BIZ_GP_CC
 	targetRelationship ENB.Geschaeftspartner.link_GP_CC
 	PrimarySource ENB_SRC.client
-	childSources[
-		
+	childSources[		
 		ENB_SRC.disposition
 		PrimaryJoinFields {ENB_SRC.client.client_id}
 		SecondaryJoinField {ENB_SRC.disposition.client_id}

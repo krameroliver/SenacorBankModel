@@ -1,4 +1,4 @@
-SpecPackage A
+SpecPackage ENB
 
 Specification link_loan_GP
 {

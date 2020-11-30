@@ -69,10 +69,19 @@ Entity Geschaeftspartner{
 		}
 	}Relationships{
 		
-		Relationship link_GP_darlehen
-		{
-			ToEntity: Darlehen 			
+		Relationship link_GP_darlehen{
+			ToEntity: Darlehen
+		},
+		Relationship link_GP_CC{
+			ToEntity: Kreditkarte
 		}
+	}
+},
+
+Entity DSGVO {
+	entityFields{
+		Field Loeschdatum [type Date dateFormat "YYYY-MM-DD"] //
+		Field Tage_bis_Loeschung [type Date dateFormat "YYYY-MM-DD"]
 	}
 }
 

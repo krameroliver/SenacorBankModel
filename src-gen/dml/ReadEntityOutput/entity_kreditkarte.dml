@@ -1,0 +1,8 @@
+record
+string("x01") kreditkarte_hk;
+	record
+	string("\x01") kartennummer;
+	date("YYYY-MM-DD") beginndatum;
+	decimal('\x01',0) kartentyp;
+end s_kreditkarte;
+end
