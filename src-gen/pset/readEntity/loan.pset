@@ -1,0 +1,29 @@
+$[[record
+entity_name "loan"
+entity_type ""
+layer_type "BITEMPORAL"
+entity_desc [record
+main_table_description  [record
+table_name         "h_loan"
+historization_type "BITEMPORAL"
+tkey_fields        [vector "loan_hk"]
+bkey_fields        [vector "loan_id","account_id",]
+table_relations    [vector
+[record
+partner_table "s_loan"
+join_condition     "INNER JOIN"
+related_fields_vec [vector
+                          [record
+                           origin_field  "loan_hk"
+                           partner_field "loan_hk"
+]]]
+]]
+partner_table_descriptions [vector
+[record
+table_name "s_loan"
+historization_type "full"
+tkey_fields [vector "loan_hk"]
+bkey_fields	NULL
+table_relations    [vector]]
+]]]]
+

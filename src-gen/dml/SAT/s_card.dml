@@ -1,0 +1,14 @@
+record
+string("\x01", maximum_length=10) card_id;
+string("\x01", maximum_length=10) disp_id;
+string("\x01", maximum_length=100) card_type;
+decimal('\x01',0) year;
+decimal('\x01',0) month;
+decimal('\x01',0) day;
+date("YYYY-MM-DD") fulldate;
+date("YYYY-MM-DD") creation_date;
+date("YYYY-MM-DD") modification_date;
+string("\x01") record_source;
+string("\x01") card_hk;
+string("\x01") effectiv_timerange;
+end

@@ -1,0 +1,29 @@
+$[[record
+entity_name "client"
+entity_type ""
+layer_type "BITEMPORAL"
+entity_desc [record
+main_table_description  [record
+table_name         "h_client"
+historization_type "BITEMPORAL"
+tkey_fields        [vector "client_hk"]
+bkey_fields        [vector "client_id",]
+table_relations    [vector
+[record
+partner_table "s_client"
+join_condition     "INNER JOIN"
+related_fields_vec [vector
+                          [record
+                           origin_field  "client_hk"
+                           partner_field "client_hk"
+]]]
+]]
+partner_table_descriptions [vector
+[record
+table_name "s_client"
+historization_type "full"
+tkey_fields [vector "client_hk"]
+bkey_fields	NULL
+table_relations    [vector]]
+]]]]
+

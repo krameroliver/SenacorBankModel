@@ -1,0 +1,5 @@
+record
+string("\x01", maximum_length=10) account_id;
+decimal('\x01',0) district_id;
+string("\x01") acct_hk;
+end 

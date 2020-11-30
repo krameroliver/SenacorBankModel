@@ -24,6 +24,14 @@ Entity Darlehen{
 	}
 },
 
+Entity Kreditkarte{
+	entityFields{
+		Field Kartennummer [type String length 20 short_describtion "Dies ist die eindeutige Nummer einer Kreditkarte"]
+		Field Beginndatum [type Date short_describtion "Dies ist das Startdatum des Kreditkartenvertrags"]
+	}
+},
+
+
 Entity Geschaeftspartner{
 	entityFields{
 		Field Kundennummer [type String length 18 short_describtion "Eindeutige Nummer zur Identifikation eines Geschäftspartners"]
