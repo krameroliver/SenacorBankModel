@@ -28,6 +28,7 @@ Entity Kreditkarte{
 	entityFields{
 		Field Kartennummer [type String length 20 short_describtion "Dies ist die eindeutige Nummer einer Kreditkarte"]
 		Field Beginndatum [type Date short_describtion "Dies ist das Startdatum des Kreditkartenvertrags"]
+		Field Kartentyp [type Int short_describtion "Kartentyp als ENUM:"]
 	}
 },
 
@@ -35,9 +36,11 @@ Entity Kreditkarte{
 Entity Geschaeftspartner{
 	entityFields{
 		Field Kundennummer [type String length 18 short_describtion "Eindeutige Nummer zur Identifikation eines Geschäftspartners"]
+		Field Anrede [type String length 20 short_describtion "Anrede des Geschäftspartners basierend auf dem Geschlecht"]
 		Field Vorname [type String length 24 short_describtion "Vor- und Mittelname des Geschäftspartners"]
 		Field Nachname [type String length 24 short_describtion "Nachame des Geschäftspartners"]
 		Field Geburtsdatum [type Date dateFormat "YYYY-MM-DD"]
+		Field Sterbedatum [type Date dateFormat "YYYY-MM-DD"]
 		Field Geschlecht [type Int short_describtion "Geschlecht des GP als ENUM
 														- 1: Frau
 														- 2: Mann"]
