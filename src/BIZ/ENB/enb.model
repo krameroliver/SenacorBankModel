@@ -83,6 +83,15 @@ Entity DSGVO{
 		Field Loeschdatum [type Date dateFormat "YYYY-MM-DD"]
 		Field Tage_bis_Loeschung [type Date dateFormat "YYYY-MM-DD"]
 	}
+}, 
+
+Entity Transaktion{
+	entityFields{
+		Field Transaktions_id [type String length 20 short_describtion "Transaktions ID einer Transaktion"]
+		Field Ausfuehrungsdatum [type Date dateFormat "YYYY-MM-DD"]
+		Field Betrag [type Decimal short_describtion ""]
+		Field Buchungsart [type String length 50 short_describtion ""]
+	}
 }
 
 
