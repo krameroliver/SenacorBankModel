@@ -3,5 +3,5 @@ entity_name "transaktion"
 hub_name    "h_transaktion"
 sat_name    "s_transaktion"
 tech_keys   [vector "transaktion_hk"]
-business_keys [vector ]
+business_keys [vector "transaktions_id"]
 ]]

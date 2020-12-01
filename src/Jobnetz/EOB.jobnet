@@ -3,22 +3,28 @@ ProcessingPoint {
 	ProcessingPoint EOB
 	{
 		ProcessingPointType Business
-		DependentJobs { ENB_MORPORK_IMPORT}
+		DependentJobs { ENB_IMPORT_TABLES}
 		
 	}
 }
 ################################## Jobs #################################
 Jobs
 {
-	Job ENB_MORPORK_IMPORT
+	Job ENB_IMPORT_TABLES
 	{ 
 		RunTime EveryDay
 		JobType Import
 		TECH_SYSTEM ENB
-		ExecutableName "enb_src_import.plan"
-		DependentJobs {
-			ENB_MORPORK_IMPORT
+		ExecutableName "enb_import_tables.plan"
+	} 
+	Job ENB_LOAD_BIZ
+	{
+		RunTime EveryDay
+		JobType Integration
+		TECH_SYSTEM ENB
+		ExecutableName "enb_load_biz.plan"
+		DependentJobs{
+			ENB_IMPORT_TABLES
 		}
-		
 	}
 }

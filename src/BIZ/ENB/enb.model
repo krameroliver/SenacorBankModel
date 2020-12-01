@@ -6,7 +6,7 @@ REPRESENTATION DATAVAULT
 
 Entity Darlehen{
 	entityFields{
-		Field Kontonummer [ type String length 18 short_describtion "Dies ist die eindeutige Kontonummer des Darlehensabrechnungskontos" ]
+		Field Kontonummer [ type String length 18 short_describtion "Dies ist die eindeutige Kontonummer des Darlehensabrechnungskontos" BusinessKey]
 		Field Nominal [ type Decimal short_describtion "Das Nominal ist der im Kreditvertrag vereinbarte Betrag den sich der Geschäftspartner leiht"]
 		Field Startdatum [ type Date dateFormat "YYYY-MM-DD"]
 		Field Enddatum [ type Date dateFormat "YYYY-MM-DD"]
@@ -21,12 +21,13 @@ Entity Darlehen{
 																- 2: debt_consolidation
 																- 3: home_improvement
 																- 4: home"]
+		Field FutureCashFlow [type Int short_describtion "Ausstehende künftige Zahlungen zur Tilgung des Darlehens"]
 	}
 },
 
 Entity Kreditkarte{
 	entityFields{
-		Field Kartennummer [type String length 20 short_describtion "Dies ist die eindeutige Nummer einer Kreditkarte"]
+		Field Kartennummer [type String length 20 short_describtion "Dies ist die eindeutige Nummer einer Kreditkarte" BusinessKey]
 		Field Beginndatum [type Date short_describtion "Dies ist das Startdatum des Kreditkartenvertrags"]
 		Field Kartentyp [type Int short_describtion "Kartentyp als ENUM:"]
 	}
@@ -35,7 +36,7 @@ Entity Kreditkarte{
 
 Entity Geschaeftspartner{
 	entityFields{
-		Field Kundennummer [type String length 18 short_describtion "Eindeutige Nummer zur Identifikation eines Geschäftspartners"]
+		Field Kundennummer [type String length 18 short_describtion "Eindeutige Nummer zur Identifikation eines Geschäftspartners" BusinessKey]
 		Field Anrede [type String length 20 short_describtion "Anrede des Geschäftspartners basierend auf dem Geschlecht"]
 		Field Vorname [type String length 24 short_describtion "Vor- und Mittelname des Geschäftspartners"]
 		Field Nachname [type String length 24 short_describtion "Nachame des Geschäftspartners"]
@@ -87,10 +88,18 @@ Entity DSGVO{
 
 Entity Transaktion{
 	entityFields{
-		Field Transaktions_id [type String length 20 short_describtion "Transaktions ID einer Transaktion"]
+		Field Transaktions_id [type String length 20 short_describtion "Transaktions ID einer Transaktion" BusinessKey]
 		Field Ausfuehrungsdatum [type Date dateFormat "YYYY-MM-DD"]
 		Field Betrag [type Decimal short_describtion ""]
 		Field Buchungsart [type String length 50 short_describtion ""]
+	}Relationships{
+		
+		Relationship link_CC_trans{
+			ToEntity: Transaktion
+		},
+		Relationship link_darlehen_trans{
+			ToEntity: Darlehen
+		}
 	}
 }
 

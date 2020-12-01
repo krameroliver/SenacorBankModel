@@ -6,6 +6,7 @@ enddatum DATE,
 status integer,
 tilgung NUMERIC(20 ,10),
 verwendungszweck integer,
+futurecashflow integer,
 creation_date DATE,
 modification_date DATE,
 

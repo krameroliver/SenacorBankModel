@@ -7,7 +7,7 @@ main_table_description  [record
 table_name         "h_kreditkarte"
 historization_type "BITEMPORAL"
 tkey_fields        [vector "kreditkarte_hk"]
-bkey_fields        [vector ]
+bkey_fields        [vector "Kartennummer",]
 table_relations    [vector
 [record
 partner_table "s_kreditkarte"

@@ -16,6 +16,7 @@ string("\x01") geschaeftspartner_hk;
 string("\x01") effectiv_timerange;
 end
 record
+string("\x01") kundennummer;
 string("\x01") geschaeftspartner_hk;
 end 
 end

@@ -10,6 +10,7 @@ string("\x01") kreditkarte_hk;
 string("\x01") effectiv_timerange;
 end
 record
+string("\x01") kartennummer;
 string("\x01") kreditkarte_hk;
 end 
 end

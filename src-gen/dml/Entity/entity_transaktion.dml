@@ -11,6 +11,7 @@ string("\x01") transaktion_hk;
 string("\x01") effectiv_timerange;
 end
 record
+string("\x01") transaktions_id;
 string("\x01") transaktion_hk;
 end 
 end

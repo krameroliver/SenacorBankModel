@@ -8,5 +8,6 @@ string("x01") darlehen_hk;
 	decimal('\x01',0) status;
 	decimal('\x01',20.10) tilgung;
 	decimal('\x01',0) verwendungszweck;
+	decimal('\x01',0) futurecashflow;
 end s_darlehen;
 end
