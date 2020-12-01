@@ -1,9 +1,0 @@
-record
-string("x01") transaktion_hk;
-	record
-	string("\x01") transaktions_id;
-	date("YYYY-MM-DD") ausfuehrungsdatum;
-	decimal('\x01',20.10) betrag;
-	string("\x01") buchungsart;
-end s_transaktion;
-end

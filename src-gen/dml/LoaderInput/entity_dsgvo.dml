@@ -1,4 +1,0 @@
-record
-date("YYYY-MM-DD") loeschdatum;
-date("YYYY-MM-DD") tage_bis_loeschung;
-end

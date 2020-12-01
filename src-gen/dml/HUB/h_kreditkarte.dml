@@ -1,4 +1,0 @@
-record
-string("\x01") kartennummer;
-string("\x01") kreditkarte_hk;
-end 
