@@ -1,0 +1,7 @@
+$[[record
+entity_name "darlehen"
+hub_name    "h_darlehen"
+sat_name    "s_darlehen"
+tech_keys   [vector "darlehen_hk"]
+business_keys [vector "kontonummer"]
+]]

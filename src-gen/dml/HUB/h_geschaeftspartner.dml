@@ -1,0 +1,4 @@
+record
+string("\x01") kundennummer;
+string("\x01") geschaeftspartner_hk;
+end 

@@ -1,0 +1,12 @@
+record
+string("\x01") kundennummer;
+string("\x01") anrede;
+string("\x01") vorname;
+string("\x01") nachname;
+date("YYYY-MM-DD") geburtsdatum;
+date("YYYY-MM-DD") sterbedatum;
+decimal('\x01',0) geschlecht;
+string("\x01") sozialversicherungsnummer;
+decimal('\x01',0) kreditkartenanzahl;
+decimal('\x01',0) loeschung;
+end

@@ -1,0 +1,6 @@
+record
+string("\x01") kartennummer;
+date("YYYY-MM-DD") beginndatum;
+decimal('\x01',0) kartentyp;
+decimal('\x01',0) loeschung;
+end

@@ -1,0 +1,7 @@
+$[[record
+entity_name "link_darlehen_trans"
+hub_name    "r_link_darlehen_trans__transaktion_darlehen"
+sat_name    "r_s_link_darlehen_trans__transaktion_darlehen"
+tech_keys   [vector "link_darlehen_trans_hk"]
+business_keys [vector ]
+]]

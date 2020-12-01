@@ -22,7 +22,7 @@ Entity Darlehen{
 																- 3: home_improvement
 																- 4: home"]
 		Field FutureCashFlow [type Int short_describtion "Ausstehende künftige Zahlungen zur Tilgung des Darlehens"]
-		Field Loeschung [type TrueFalse short_describtion "Indikator ob Entität zu löschen ist" ]
+		Field Loeschung [type Int short_describtion "Indikator ob Entität zu löschen ist" ]
 	}
 },
 
@@ -31,7 +31,7 @@ Entity Kreditkarte{
 		Field Kartennummer [type String length 20 short_describtion "Dies ist die eindeutige Nummer einer Kreditkarte" BusinessKey]
 		Field Beginndatum [type Date short_describtion "Dies ist das Startdatum des Kreditkartenvertrags"]
 		Field Kartentyp [type Int short_describtion "Kartentyp als ENUM:"]
-		Field Loeschung [type TrueFalse short_describtion "Indikator ob Entität zu löschen ist" ]
+		Field Loeschung [type Int short_describtion "Indikator ob Entität zu löschen ist" ]
 	}
 },
 
@@ -49,7 +49,7 @@ Entity Geschaeftspartner{
 														- 2: Mann"]
 		Field Sozialversicherungsnummer [type String length 24 short_describtion "Sozialversicherungsnummer des GP"]
 		Field Kreditkartenanzahl [type Int short_describtion "Anzahl der Kreditkarten eines Geschäftspartners"]
-		Field Loeschung [type TrueFalse short_describtion "Indikator ob Entität zu löschen ist" ]
+		Field Loeschung [type Int short_describtion "Indikator ob Entität zu löschen ist" ]
 		
 	}Includes {
 		Include Postalische_Addresse{
@@ -88,7 +88,7 @@ Entity Transaktion{
 		Field Ausfuehrungsdatum [type Date dateFormat "YYYY-MM-DD"]
 		Field Betrag [type Decimal short_describtion ""]
 		Field Buchungsart [type String length 50 short_describtion ""]
-		Field Loeschung [type TrueFalse short_describtion "Indikator ob Entität zu löschen ist" ]
+		Field Loeschung [type Int short_describtion "Indikator ob Entität zu löschen ist" ]
 	}Relationships{
 		
 		Relationship link_CC_trans{

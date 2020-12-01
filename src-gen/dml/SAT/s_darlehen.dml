@@ -1,0 +1,16 @@
+record
+string("\x01") kontonummer;
+decimal('\x01',20.10) nominal;
+date("YYYY-MM-DD") startdatum;
+date("YYYY-MM-DD") enddatum;
+decimal('\x01',0) status;
+decimal('\x01',20.10) tilgung;
+decimal('\x01',0) verwendungszweck;
+decimal('\x01',0) futurecashflow;
+decimal('\x01',0) loeschung;
+date("YYYY-MM-DD") creation_date;
+date("YYYY-MM-DD") modification_date;
+string("\x01") record_source;
+string("\x01") darlehen_hk;
+string("\x01") effectiv_timerange;
+end
