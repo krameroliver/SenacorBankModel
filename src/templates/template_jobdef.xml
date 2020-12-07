@@ -3,7 +3,7 @@
 
   <runtimeKey runtimeName="abinitio" systemName="SenacorBank"/>
 
-  <mainAction executablePath="<executable>" executableType="PLAN" workingDirectory="/~ab_tmp_dir">
+  <mainAction executablePath="${AI_PLAN}/<executable>" executableType="PLAN" workingDirectory="${RUN}">
     <arguments/>
   </mainAction>
 
