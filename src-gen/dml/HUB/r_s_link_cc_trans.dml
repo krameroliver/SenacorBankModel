@@ -1,6 +1,7 @@
 record
-string("\x01") link_cc_trans_hk,
+string("\x01") link_cc_trans_hk = NULL;
 date("YYYY-MM-DD") creation_date;
 date("YYYY-MM-DD") modification_date;
+string("\x01") record_source;
 string("\x01") effectiv_timerange;
 end

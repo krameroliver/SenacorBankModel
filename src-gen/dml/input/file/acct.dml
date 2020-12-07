@@ -1,9 +1,9 @@
 record
-account_id string("\x01");
-district_id decimal('\x01',0);
-frequency string("\x01");
-parseddate date("YYYY-MM-DD");
-year decimal('\x01',0);
-month decimal('\x01',0);
-day decimal('\x01',0);
+string("\x01") account_id = NULL;
+decimal('\x01',0) district_id = NULL;
+string("\x01") frequency = NULL;
+date("YYYY-MM-DD") parseddate = NULL;
+decimal('\x01',0) year = NULL;
+decimal('\x01',0) month = NULL;
+decimal('\x01',0) day = NULL;
 end

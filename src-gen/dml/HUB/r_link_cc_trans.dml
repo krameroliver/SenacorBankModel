@@ -1,5 +1,5 @@
 record
-string("\x01") link_cc_trans_hk ;
-string("\x01") transaktion_hk;
-string("\x01") transaktion_hk;
+string("\x01") link_cc_trans_hk  = NULL;
+string("\x01") transaktion_hk =NULL;
+string("\x01") transaktion_hk =NULL;
 end

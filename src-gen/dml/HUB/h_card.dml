@@ -1,5 +1,5 @@
 record
-string("\x01") card_id;
-string("\x01") disp_id;
-string("\x01") card_hk;
+string("\x01") card_id= NULL;
+string("\x01") disp_id= NULL;
+string("\x01") card_hk  = NULL;
 end 

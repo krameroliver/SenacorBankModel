@@ -1,14 +1,14 @@
 record
 string("x01") darlehen_hk;
 	record
-	string("\x01") kontonummer;
-	decimal('\x01',20.10) nominal;
-	date("YYYY-MM-DD") startdatum;
-	date("YYYY-MM-DD") enddatum;
-	decimal('\x01',0) status;
-	decimal('\x01',20.10) tilgung;
-	decimal('\x01',0) verwendungszweck;
-	decimal('\x01',0) futurecashflow;
-	decimal('\x01',0) loeschung;
+	string("\x01") kontonummer=NULL;
+	decimal("\x01",maximum_length=20) nominal=NULL;
+	date("YYYY-MM-DD") startdatum=NULL;
+	date("YYYY-MM-DD") enddatum=NULL;
+	decimal('\x01',0) status=NULL;
+	decimal("\x01",maximum_length=20) tilgung=NULL;
+	decimal('\x01',0) verwendungszweck=NULL;
+	decimal('\x01',0) futurecashflow=NULL;
+	decimal('\x01',0) loeschung=NULL;
 end s_darlehen;
 end

@@ -1,12 +1,12 @@
 record
 string("x01") card_hk;
 	record
-	string("\x01") card_id;
-	string("\x01") disp_id;
-	string("\x01") card_type;
-	decimal('\x01',0) year;
-	decimal('\x01',0) month;
-	decimal('\x01',0) day;
-	date("YYYY-MM-DD") fulldate;
+	string("\x01") card_id=NULL;
+	string("\x01") disp_id=NULL;
+	string("\x01") card_type=NULL;
+	decimal('\x01',0) year=NULL;
+	decimal('\x01',0) month=NULL;
+	decimal('\x01',0) day=NULL;
+	date("YYYY-MM-DD") fulldate=NULL;
 end s_card;
 end

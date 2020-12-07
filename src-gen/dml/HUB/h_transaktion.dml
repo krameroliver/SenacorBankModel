@@ -1,4 +1,4 @@
 record
-string("\x01") transaktions_id;
-string("\x01") transaktion_hk;
+string("\x01") transaktions_id= NULL;
+string("\x01") transaktion_hk  = NULL;
 end 

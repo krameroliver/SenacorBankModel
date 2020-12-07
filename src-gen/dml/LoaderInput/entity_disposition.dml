@@ -1,6 +1,6 @@
 record
-string("\x01") disp_id;
-string("\x01") client_id;
-string("\x01") account_id;
-string("\x01") user_type;
+string("\x01") disp_id= NULL;
+string("\x01") client_id= NULL;
+string("\x01") account_id= NULL;
+string("\x01") user_type= NULL;
 end

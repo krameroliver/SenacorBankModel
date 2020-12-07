@@ -1,0 +1,57 @@
+[record
+layer "biz"
+entity_name "geschaeftspartner"
+entity_type ""
+layer_type "BITEMPORAL"
+entity_desc [record
+main_table_description  [record
+table_name         "h_geschaeftspartner"
+historization_type "BITEMPORAL"
+tkey_fields        [vector "geschaeftspartner_hk"]
+bkey_fields        [vector "kundennummer"]
+table_relations    [vector
+[record
+partner_table "s_geschaeftspartner"
+join_condition     "INNER JOIN"
+related_fields_vec [vector
+                          [record
+                           origin_field  "geschaeftspartner_hk"
+                           partner_field "geschaeftspartner_hk"
+]]]
+,[record
+partner_table "s_geschaeftspartner_postalische_addresse"
+join_condition     "INNER JOIN"
+related_fields_vec [vector
+                          [record
+                           origin_field  "geschaeftspartner_hk"
+                           partner_field "geschaeftspartner_hk"
+]]]
+,[record
+partner_table "m_geschaeftspartner_digitale_addresse"
+join_condition     "INNER JOIN"
+related_fields_vec [vector
+                          [record
+                           origin_field  "geschaeftspartner_hk"
+                           partner_field "geschaeftspartner_hk"
+]]]
+]]
+partner_table_descriptions [vector
+[record
+table_name "s_geschaeftspartner"
+historization_type "full"
+tkey_fields [vector "geschaeftspartner_hk"]
+bkey_fields	[vector ]
+table_relations    [vector]]
+,[record
+table_name "s_geschaeftspartner_postalische_addresse"
+historization_type "full"
+tkey_fields [vector "geschaeftspartner_hk"]
+bkey_fields	[vector ]
+table_relations    [vector]]
+,[record
+table_name "m_geschaeftspartner_digitale_addresse"
+historization_type "full"
+tkey_fields [vector "geschaeftspartner_hk"]
+bkey_fields	[vector ]
+table_relations    [vector]]
+]]]

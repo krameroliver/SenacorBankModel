@@ -1,10 +1,10 @@
 record
 string("x01") transaktion_hk;
 	record
-	string("\x01") transaktions_id;
-	date("YYYY-MM-DD") ausfuehrungsdatum;
-	decimal('\x01',20.10) betrag;
-	string("\x01") buchungsart;
-	decimal('\x01',0) loeschung;
+	string("\x01") transaktions_id=NULL;
+	date("YYYY-MM-DD") ausfuehrungsdatum=NULL;
+	decimal("\x01",maximum_length=20) betrag=NULL;
+	string("\x01") buchungsart=NULL;
+	decimal('\x01',0) loeschung=NULL;
 end s_transaktion;
 end

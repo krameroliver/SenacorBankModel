@@ -1,26 +1,26 @@
 record
 string("x01") geschaeftspartner_hk;
 	record
-	string("\x01") kundennummer;
-	string("\x01") anrede;
-	string("\x01") vorname;
-	string("\x01") nachname;
-	date("YYYY-MM-DD") geburtsdatum;
-	date("YYYY-MM-DD") sterbedatum;
-	decimal('\x01',0) geschlecht;
-	string("\x01") sozialversicherungsnummer;
-	decimal('\x01',0) kreditkartenanzahl;
-	decimal('\x01',0) loeschung;
+	string("\x01") kundennummer=NULL;
+	string("\x01") anrede=NULL;
+	string("\x01") vorname=NULL;
+	string("\x01") nachname=NULL;
+	date("YYYY-MM-DD") geburtsdatum=NULL;
+	date("YYYY-MM-DD") sterbedatum=NULL;
+	decimal('\x01',0) geschlecht=NULL;
+	string("\x01") sozialversicherungsnummer=NULL;
+	decimal('\x01',0) kreditkartenanzahl=NULL;
+	decimal('\x01',0) loeschung=NULL;
 end s_geschaeftspartner;
 record
-	string("\x01") addresse1;
-	string("\x01") addresse2;
-	string("\x01") stadt;
-	string("\x01") bundesland;
-	decimal('\x01',0) postleitzahl;
+	string("\x01") addresse1=NULL;
+	string("\x01") addresse2=NULL;
+	string("\x01") stadt=NULL;
+	string("\x01") bundesland=NULL;
+	decimal('\x01',0) postleitzahl=NULL;
 end s_geschaeftspartner_postalische_addresse;
 record
-	decimal('\x01',0) kontakttyp;
-	string("\x01") kontaktinfo;
+	decimal('\x01',0) kontakttyp=NULL;
+	string("\x01") kontaktinfo=NULL;
 end s_geschaeftspartner_digitale_addresse;
 end

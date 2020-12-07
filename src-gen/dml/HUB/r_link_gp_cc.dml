@@ -1,5 +1,5 @@
 record
-string("\x01") link_gp_cc_hk ;
-string("\x01") geschaeftspartner_hk;
-string("\x01") kreditkarte_hk;
+string("\x01") link_gp_cc_hk  = NULL;
+string("\x01") geschaeftspartner_hk =NULL;
+string("\x01") kreditkarte_hk =NULL;
 end

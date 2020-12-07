@@ -1,17 +1,16 @@
 record
 record
-account_id string("\x01");
-district_id decimal('\x01',0);
-frequency string("\x01");
-parseddate date("YYYY-MM-DD");
-year decimal('\x01',0);
-month decimal('\x01',0);
-day decimal('\x01',0);
+account_id string("\x01")= NULL;
+district_id decimal('\x01',0)= NULL;
+frequency string("\x01")= NULL;
+parseddate date("YYYY-MM-DD")= NULL;
+year decimal('\x01',0)= NULL;
+month decimal('\x01',0)= NULL;
+day decimal('\x01',0)= NULL;
 end s_acct
 
 record
-record_source string("\x01");
-record_hk string("\x01");
-acct_hk string("\x01");
+string("\x01") record_source ;
+string("\x01") acct_hk = NULL;
 end h_acct
 end

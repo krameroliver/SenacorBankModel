@@ -1,5 +1,5 @@
 record
-string("\x01") account_id;
-decimal('\x01',0) district_id;
-string("\x01") acct_hk;
+string("\x01") account_id= NULL;
+decimal('\x01',0) district_id= NULL;
+string("\x01") acct_hk  = NULL;
 end 
