@@ -1,0 +1,8 @@
+[record
+layer "src"
+entity_name "acct"
+hub_name    "h_acct"
+sat_name    "s_acct"
+tech_keys   [vector "acct_hk"]
+business_keys [vector "account_id","district_id"]
+]

@@ -1,0 +1,28 @@
+record
+record
+client_id string("\x01")= NULL;
+sex string("\x01")= NULL;
+fulldate date("YYYY-MM-DD")= NULL;
+day decimal('\x01',0)= NULL;
+month decimal('\x01',0)= NULL;
+year decimal('\x01',0)= NULL;
+age decimal('\x01',0)= NULL;
+social string("\x01")= NULL;
+first string("\x01")= NULL;
+middle string("\x01")= NULL;
+last string("\x01")= NULL;
+phone string("\x01")= NULL;
+email string("\x01")= NULL;
+address_1 string("\x01")= NULL;
+address_2 string("\x01")= NULL;
+city string("\x01")= NULL;
+state string("\x01")= NULL;
+zipcode string("\x01")= NULL;
+district_id decimal('\x01',0)= NULL;
+end s_client
+
+record
+string("\x01") record_source ;
+string("\x01") client_hk = NULL;
+end h_client
+end

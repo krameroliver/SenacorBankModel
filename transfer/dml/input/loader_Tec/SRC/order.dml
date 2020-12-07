@@ -1,0 +1,15 @@
+record
+record
+order_id string("\x01")= NULL;
+account_id string("\x01")= NULL;
+bank_to string("\x01")= NULL;
+account_to decimal('\x01',0)= NULL;
+amount decimal("\x01",maximum_length=20)= NULL;
+k_symbol string("\x01")= NULL;
+end s_order
+
+record
+string("\x01") record_source ;
+string("\x01") order_hk = NULL;
+end h_order
+end
