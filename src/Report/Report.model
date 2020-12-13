@@ -1,0 +1,10 @@
+logpackage ReportTest
+LAYER RPT
+
+
+REPORT TESTREPORT
+{
+	Field T [ReferenceField ENB_SRC.trans.account]
+	Field FACTUM [type String isAggregated isFact ]
+	
+}

@@ -1,13 +1,20 @@
 logpackage ENB
 LAYER BIZ
-LAYER_TYPE INTEGRATION
-HISTORISATION BITEMPORAL
-REPRESENTATION DATAVAULT
+
+
+
+AbstractEntity Klaus
+createSuperior
+abstractFields {
+Field Kontonummer [ type String length 18 short_describtion "Dies ist die eindeutige Kontonummer des Darlehensabrechnungskontos" ]
+		
+}
+
 
 Entity Darlehen{
+	AbstractEntity Klaus
 	entityFields{
-		Field Kontonummer [ type String length 18 short_describtion "Dies ist die eindeutige Kontonummer des Darlehensabrechnungskontos" BusinessKey]
-		Field Nominal [ type Decimal short_describtion "Das Nominal ist der im Kreditvertrag vereinbarte Betrag den sich der Geschäftspartner leiht"]
+		Field Nominal [ type Decimal short_describtion "Das Nominal ist der im Kreditvertrag vereinbarte Betrag den sich der Geschäftspartner leiht" BusinessKey]
 		Field Startdatum [ type Date dateFormat "YYYY-MM-DD"]
 		Field Enddatum [ type Date dateFormat "YYYY-MM-DD"]
 		Field Status [ type Int short_describtion "Status des Darlehens:
@@ -24,16 +31,18 @@ Entity Darlehen{
 		Field FutureCashFlow [type Int short_describtion "Ausstehende künftige Zahlungen zur Tilgung des Darlehens"]
 		Field Loeschung [type Int short_describtion "Indikator ob Entität zu löschen ist" ]
 	}
-},
+}
 
 Entity Kreditkarte{
+	AbstractEntity Klaus
 	entityFields{
+
 		Field Kartennummer [type String length 20 short_describtion "Dies ist die eindeutige Nummer einer Kreditkarte" BusinessKey]
 		Field Beginndatum [type Date short_describtion "Dies ist das Startdatum des Kreditkartenvertrags"]
 		Field Kartentyp [type Int short_describtion "Kartentyp als ENUM:"]
 		Field Loeschung [type Int short_describtion "Indikator ob Entität zu löschen ist" ]
 	}
-},
+}
 
 
 Entity Geschaeftspartner{
@@ -80,7 +89,7 @@ Entity Geschaeftspartner{
 			ToEntity: Kreditkarte
 		}
 	}
-}, 
+}
 
 Entity Transaktion{
 	entityFields{

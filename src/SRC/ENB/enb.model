@@ -1,8 +1,7 @@
 logpackage ENB_SRC
 LAYER SRC
-LAYER_TYPE STAGE
-HISTORISATION BITEMPORAL
-REPRESENTATION DATAVAULT
+
+
 
 Entity acct
 //EntityDescription { afewf}
@@ -23,7 +22,7 @@ Entity acct
 		Field day [ type Int ]
 	}
 	
-},
+}
 
 Entity card
 metadata
@@ -41,7 +40,7 @@ metadata
 	Field day[ type Int ]
 	Field fulldate[ type Date dateFormat 'YYYY-MM-DD']
 	}	
-},
+}
 
 Entity client
 metadata
@@ -71,7 +70,7 @@ metadata
 	Field zipcode[ type String length 100]
 	Field district_id[ type Int]
 	}	
-},
+}
 
 Entity disposition
 metadata
@@ -86,7 +85,7 @@ metadata
 		Field account_id [ type String length 10 BusinessKey]
 		Field user_type [ type String length 6 original_name "type" ]		
 	}
-},
+}
 
 Entity loan
 metadata
@@ -109,7 +108,7 @@ metadata
 		Field location[ type Int]
 		Field purpose[ type String length 255]
 	}
-},
+}
 Entity order
 metadata
 	{
@@ -125,7 +124,7 @@ metadata
 		Field amount[ type Decimal precision 32 scale 2]
 		Field k_symbol[ type String length 100]
 	}
-},
+}
 
 Entity trans
 metadata
