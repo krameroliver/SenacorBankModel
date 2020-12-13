@@ -1,6 +1,4 @@
-./src-gen/*
-src-gen/*
-src-gen
 src-gen/
 xtend-gen/
 *.xml_gen
+*.pset
