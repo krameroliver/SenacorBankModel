@@ -1,9 +1,0 @@
-record
-string("x01") kreditkarte_hk;
-	record
-	string("\x01") kartennummer=NULL;
-	date("YYYY-MM-DD") beginndatum=NULL;
-	decimal('\x01',0) kartentyp=NULL;
-	decimal('\x01',0) loeschung=NULL;
-end s_kreditkarte;
-end

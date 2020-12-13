@@ -1,8 +1,0 @@
-[record
-layer "biz"
-entity_name "link_gp_cc"
-hub_name    "r_link_gp_cc"
-sat_name    "r_s_link_gp_cc"
-tech_keys   [vector "link_gp_cc_hk"]
-business_keys [vector "geschaeftspartner_hk","kreditkarte_hk" ]
-]

@@ -1,8 +1,0 @@
-[record
-layer "biz"
-entity_name "postalische_addresse_"
-hub_name    "h_geschaeftspartner"
-sat_name    "s_geschaeftspartner_postalische_addresse"
-tech_keys   [vector "geschaeftspartner_hk"]
-business_keys [vector "kundennummer"]
-]

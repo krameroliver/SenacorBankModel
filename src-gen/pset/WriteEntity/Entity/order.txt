@@ -1,8 +1,0 @@
-[record
-layer "src"
-entity_name "order"
-hub_name    "h_order"
-sat_name    "s_order"
-tech_keys   [vector "order_hk"]
-business_keys [vector "order_id","account_id"]
-]

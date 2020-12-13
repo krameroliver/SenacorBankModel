@@ -1,6 +1,0 @@
-record
-string("\x01") disp_id= NULL;
-string("\x01") client_id= NULL;
-string("\x01") account_id= NULL;
-string("\x01") disposition_hk  = NULL;
-end 

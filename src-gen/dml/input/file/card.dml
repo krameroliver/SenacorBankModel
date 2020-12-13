@@ -1,9 +1,0 @@
-record
-string("\x01") card_id = NULL;
-string("\x01") disp_id = NULL;
-string("\x01") card_type = NULL;
-decimal('\x01',0) year = NULL;
-decimal('\x01',0) month = NULL;
-decimal('\x01',0) day = NULL;
-date("YYYY-MM-DD") fulldate = NULL;
-end

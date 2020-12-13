@@ -1,5 +1,0 @@
-record
-string("\x01") loan_id= NULL;
-string("\x01") account_id= NULL;
-string("\x01") loan_hk  = NULL;
-end 

@@ -1,4 +1,0 @@
-record
-string("\x01") kundennummer= NULL;
-string("\x01") geschaeftspartner_hk  = NULL;
-end 

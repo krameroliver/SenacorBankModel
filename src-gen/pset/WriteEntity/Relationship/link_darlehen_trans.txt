@@ -1,8 +1,0 @@
-[record
-layer "biz"
-entity_name "link_darlehen_trans"
-hub_name    "r_link_darlehen_trans"
-sat_name    "r_s_link_darlehen_trans"
-tech_keys   [vector "link_darlehen_trans_hk"]
-business_keys [vector "transaktion_hk","darlehen_hk" ]
-]

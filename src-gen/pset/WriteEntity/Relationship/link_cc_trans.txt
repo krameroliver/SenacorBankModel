@@ -1,8 +1,0 @@
-[record
-layer "biz"
-entity_name "link_cc_trans"
-hub_name    "r_link_cc_trans"
-sat_name    "r_s_link_cc_trans"
-tech_keys   [vector "link_cc_trans_hk"]
-business_keys [vector "transaktion_hk","transaktion_hk" ]
-]

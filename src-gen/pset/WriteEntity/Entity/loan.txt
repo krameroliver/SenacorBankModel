@@ -1,8 +1,0 @@
-[record
-layer "src"
-entity_name "loan"
-hub_name    "h_loan"
-sat_name    "s_loan"
-tech_keys   [vector "loan_hk"]
-business_keys [vector "loan_id","account_id"]
-]

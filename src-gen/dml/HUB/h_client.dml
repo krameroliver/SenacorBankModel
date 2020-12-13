@@ -1,4 +1,0 @@
-record
-string("\x01") client_id= NULL;
-string("\x01") client_hk  = NULL;
-end 

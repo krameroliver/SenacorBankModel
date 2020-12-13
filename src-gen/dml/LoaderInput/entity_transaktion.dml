@@ -1,7 +1,0 @@
-record
-string("\x01") transaktions_id= NULL;
-date("YYYY-MM-DD") ausfuehrungsdatum= NULL;
-decimal("\x01",maximum_length=20) betrag= NULL;
-string("\x01") buchungsart= NULL;
-decimal('\x01',0) loeschung= NULL;
-end

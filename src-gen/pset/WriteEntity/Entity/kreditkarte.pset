@@ -1,7 +1,0 @@
-$[[record
-entity_name "kreditkarte"
-hub_name    "h_kreditkarte"
-sat_name    "s_kreditkarte"
-tech_keys   [vector "kreditkarte_hk"]
-business_keys [vector "kartennummer"]
-]]

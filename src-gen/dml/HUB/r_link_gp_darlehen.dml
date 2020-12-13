@@ -1,5 +1,0 @@
-record
-string("\x01") link_gp_darlehen_hk  = NULL;
-string("\x01") geschaeftspartner_hk =NULL;
-string("\x01") darlehen_hk =NULL;
-end

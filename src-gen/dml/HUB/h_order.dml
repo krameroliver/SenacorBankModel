@@ -1,5 +1,0 @@
-record
-string("\x01") order_id= NULL;
-string("\x01") account_id= NULL;
-string("\x01") order_hk  = NULL;
-end 
