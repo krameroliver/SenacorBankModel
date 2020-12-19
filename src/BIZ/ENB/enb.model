@@ -14,7 +14,7 @@ Field Kontonummer [ type String length 18 short_describtion "Dies ist die eindeu
 Entity Darlehen{
 	AbstractEntity Klaus
 	entityFields{
-		Field Nominal [ type Decimal short_describtion "Das Nominal ist der im Kreditvertrag vereinbarte Betrag den sich der Geschäftspartner leiht" BusinessKey]
+		Field Nominal [ type Decimal  precision 10 scale 2 short_describtion "Das Nominal ist der im Kreditvertrag vereinbarte Betrag den sich der Geschäftspartner leiht" BusinessKey]
 		Field Startdatum [ type Date dateFormat "YYYY-MM-DD"]
 		Field Enddatum [ type Date dateFormat "YYYY-MM-DD"]
 		Field Status [ type Int short_describtion "Status des Darlehens:
@@ -22,7 +22,7 @@ Entity Darlehen{
 													- 2/B: Vertrag abgelaufen, Darlehen nicht abgezahlt
 													- 3/C: Vertrag laufend, keine Probleme
 													- 4/D: Vertrag laufend, Geschäftspartner im Zahlungsverzug "]
-		Field Tilgung [ type Decimal short_describtion "Monatliche Zahlung zur Tilgung des Darlehens" ]
+		Field Tilgung [ type Decimal precision 10 scale 2 short_describtion "Monatliche Zahlung zur Tilgung des Darlehens" ]
 		Field Verwendungszweck [ type Int short_describtion "Verwendungszweck des Darlehens:
 																- 1: car
 																- 2: debt_consolidation

@@ -134,21 +134,21 @@ metadata
 		lineDelimiter "\\\\r\\\\n"
 	}{
 	entityFields{
-		Field RUN_ID[ type Int  tableOnly ]
+		Field RUN_ID[ type String length 100 ]
 		Field trans_id[ type String length 10 BusinessKey]
 		Field account_id[ type String length 10 BusinessKey]
 		Field trans_type[ type String length 100 original_name "type"]
 		Field operation[ type String length 100]
-		Field amount[ type Decimal precision 32 scale 2]
+		Field amount[ type String length 100]
 		Field balance[ type String length 100]
 		Field k_symbol[ type String length 100]
 		Field bank[ type String length 2]
-		Field account[ type Int]
+		Field account[ type String length 255]
 		Field year[ type Int]
 		Field month[ type Int]
 		Field day[ type Int]
-		Field fulldate[ type Date dateFormat 'DD.MM.YYYY']
+		Field fulldate[ type String length 100]
 		Field fulltime[ type String length 10] 
-		Field fulldatewithtime [ type TimeStamp ]
+		Field fulldatewithtime [ type String length 100 ]
 	}
 }
