@@ -1,0 +1,9 @@
+MappingPackage ENB
+
+refLogpackage ENB
+
+mappings{
+	Mapping darlehen
+	ENB.Darlehen.Kontonummer = ENB_SRC.loan.account_id;
+	ENB.Darlehen.Status = ENB_SRC.loan.fulldate.LRtrim.adding(ENB_SRC.client.address_1).firstIf( ENB_SRC.acct.account_id!=null );
+}

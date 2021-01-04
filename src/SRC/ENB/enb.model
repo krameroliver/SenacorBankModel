@@ -1,5 +1,7 @@
 logpackage ENB_SRC
-LAYER SRC
+LAYER_NAME SRC
+LAYERTYPE STAGE
+TechDesigne DATAVAULT
 
 
 
@@ -13,7 +15,7 @@ Entity acct
 	}
 	{
 	entityFields{
-		Field account_id [ type String length 10 short_describtion "Account ID" BusinessKey]
+		Field account_id [ type String length 11 short_describtion "Account ID" BusinessKey]
 		Field district_id [ type Int BusinessKey]
 		Field frequency [ type String length 100]
 		Field parseddate [ type Date dateFormat "YYYY-MM-DD"]

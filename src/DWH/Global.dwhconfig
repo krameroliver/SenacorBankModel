@@ -1,0 +1,18 @@
+ConfigPackage Config
+
+ConfigName Global
+OperationSystem UBUNTU_SERVER
+DataBase POSTGRES 
+
+
+ConfigName SRC
+ReferenzingLogpackage ENB_SRC
+DataBase POSTGRES
+
+ConfigName BIZ
+ReferenzingLogpackage ENB
+DataBase POSTGRES
+
+ConfigName RPT
+ReferenzingLogpackage RPT
+DataBase MongoDB

@@ -1,10 +1,13 @@
-logpackage ReportTest
-LAYER RPT
+logpackage RPT
+LAYER_NAME RPT
+LAYERTYPE REPORTING
+TechDesigne STAR
 
 
 REPORT TESTREPORT
 {
-	Field T [ReferenceField ENB_SRC.trans.account]
-	Field FACTUM [type String isAggregated isFact ]
+	Field T [ReferenceField ENB.Transaktion.Betrag]
+	Field FACTUM [type String]
+	Field FACTUM2 [type String]
 	
 }
