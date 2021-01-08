@@ -1,4 +1,6 @@
-SchedulePackage EOB
+SchedulePackage EOB 
+SchedulingTool ControlM
+
 ProcessingPoint {
 	ProcessingPoint EOB
 	{
@@ -12,7 +14,7 @@ Jobs
 {
 	Job ENB_IMPORT_TABLES
 	{ 
-		RunTime EveryDay
+		RunTime WorkingDay
 		JobType Import
 		ExecutableType Plan
 		TECH_SYSTEM ENB
@@ -20,7 +22,7 @@ Jobs
 	} 
 	Job ENB_LOAD_BIZ
 	{
-		RunTime EveryDay
+		RunTime WorkingDay
 		JobType Integration
 		ExecutableType Plan
 		TECH_SYSTEM ENB

@@ -2,13 +2,14 @@ logpackage ENB
 LAYER_NAME BIZ
 LAYERTYPE INTEGRATION
 TechDesigne DATAVAULT
-
+DataBaseType MariaDB
+Historisation BITEMPORAL
 
 /* 
 AbstractEntity Klaus
 createSuperior
 abstractFields { 
-Field Kontonummer [ type String length 18 short_describtion "Dies ist die eindeutige Kontonummer des Darlehensabrechnungskontos" ]
+Field Kontonummer [ type String 18 short_describtion "Dies ist die eindeutige Kontonummer des Darlehensabrechnungskontos" ]
 		
 }
 */
@@ -16,8 +17,8 @@ Field Kontonummer [ type String length 18 short_describtion "Dies ist die eindeu
 Entity Darlehen{
 	//AbstractEntity Klaus
 	entityFields{
-		Field Kontonummer [ type String length 20 short_describtion "Dies ist die eindeutige Kontonummer des Darlehensabrechnungskontos" ]
-		Field Nominal [ type Decimal  precision 10 scale 2 short_describtion "Das Nominal ist der im Kreditvertrag vereinbarte Betrag den sich der Geschäftspartner leiht" BusinessKey]
+		Field Kontonummer [ type String 10 short_describtion "Dies ist die eindeutige Kontonummer des Darlehensabrechnungskontos" ]
+		Field Nominal [ type Decimal  10,2 short_describtion "Das Nominal ist der im Kreditvertrag vereinbarte Betrag den sich der Geschäftspartner leiht" BusinessKey]
 		Field Startdatum [ type Date dateFormat "YYYY-MM-DD"]
 		Field Enddatum [ type Date dateFormat "YYYY-MM-DD"]
 		Field Status [ type Int short_describtion "Status des Darlehens:
@@ -25,7 +26,7 @@ Entity Darlehen{
 													- 2/B: Vertrag abgelaufen, Darlehen nicht abgezahlt
 													- 3/C: Vertrag laufend, keine Probleme
 													- 4/D: Vertrag laufend, Geschäftspartner im Zahlungsverzug "]
-		Field Tilgung [ type Decimal precision 10 scale 2 short_describtion "Monatliche Zahlung zur Tilgung des Darlehens" ]
+		Field Tilgung [ type Decimal 10,2 short_describtion "Monatliche Zahlung zur Tilgung des Darlehens" ]
 		Field Verwendungszweck [ type Int short_describtion "Verwendungszweck des Darlehens:
 																- 1: car
 																- 2: debt_consolidation
@@ -40,7 +41,7 @@ Entity Kreditkarte{
 	//AbstractEntity Klaus
 	entityFields{
 
-		Field Kartennummer [type String length 20 short_describtion "Dies ist die eindeutige Nummer einer Kreditkarte" BusinessKey]
+		Field Kartennummer [type String 20 short_describtion "Dies ist die eindeutige Nummer einer Kreditkarte" BusinessKey]
 		Field Beginndatum [type Date short_describtion "Dies ist das Startdatum des Kreditkartenvertrags"]
 		Field Kartentyp [type Int short_describtion "Kartentyp als ENUM:"]
 		Field Loeschung [type Int short_describtion "Indikator ob Entität zu löschen ist" ]
@@ -50,36 +51,36 @@ Entity Kreditkarte{
 
 Entity Geschaeftspartner{
 	entityFields{
-		Field Kundennummer [type String length 18 short_describtion "Eindeutige Nummer zur Identifikation eines Geschäftspartners" BusinessKey]
-		Field Anrede [type String length 20 short_describtion "Anrede des Geschäftspartners basierend auf dem Geschlecht"]
-		Field Vorname [type String length 24 short_describtion "Vor- und Mittelname des Geschäftspartners"]
-		Field Nachname [type String length 24 short_describtion "Nachame des Geschäftspartners"]
+		Field Kundennummer [type String 18 short_describtion "Eindeutige Nummer zur Identifikation eines Geschäftspartners" BusinessKey]
+		Field Anrede [type String 20 short_describtion "Anrede des Geschäftspartners basierend auf dem Geschlecht"]
+		Field Vorname [type String 24 short_describtion "Vor- und Mittelname des Geschäftspartners"]
+		Field Nachname [type String 24 short_describtion "Nachame des Geschäftspartners"]
 		Field Geburtsdatum [type Date dateFormat "YYYY-MM-DD"]
 		Field Sterbedatum [type Date dateFormat "YYYY-MM-DD"]
 		Field Geschlecht [type Int short_describtion "Geschlecht des GP als ENUM
 														- 1: Frau
 														- 2: Mann"]
-		Field Sozialversicherungsnummer [type String length 24 short_describtion "Sozialversicherungsnummer des GP"]
+		Field Sozialversicherungsnummer [type String 24 short_describtion "Sozialversicherungsnummer des GP"]
 		Field Kreditkartenanzahl [type Int short_describtion "Anzahl der Kreditkarten eines Geschäftspartners"]
 		Field Loeschung [type Int short_describtion "Indikator ob Entität zu löschen ist" ]
 		
-	}Includes { 
-		Include Postalische_Addresse{
-			IncludeFields{
-				Field addresse1 [type String length 50 short_describtion "Wohnaddresse des Geschäftspartners"],
-				Field addresse2 [type String length 50 short_describtion "Addresszusatz zur Wohnadresse"],
-				Field stadt [type String length 50 short_describtion "Stadt des Wohnsitzes"],
-				Field bundesland [type String length 50 short_describtion "Bundesland des Wohnsitzes"],
+	}EntityExtensions { 
+		Extension Postalische_Addresse{
+			Fields{
+				Field addresse1 [type String 50 short_describtion "Wohnaddresse des Geschäftspartners"],
+				Field addresse2 [type String 50 short_describtion "Addresszusatz zur Wohnadresse"],
+				Field stadt [type String 50 short_describtion "Stadt des Wohnsitzes"],
+				Field bundesland [type String 50 short_describtion "Bundesland des Wohnsitzes"],
 				Field postleitzahl [type Int short_describtion "Postleitzahl des Wohnsitzes"]
 			}
 		},
-		Include Digitale_Addresse{ 
-			IncludeFields{
+		Extension Digitale_Addresse{ 
+			Fields{
 				Field kontakttyp [type Int short_describtion "Art/Type der Kontaktinformation
 														- 1: mobil privat
 														- 2: mobil geschaeftlich
 														- 3: Email"],
-				Field kontaktinfo [type String length 50 short_describtion "mobile Kontaktinformation"]
+				Field kontaktinfo [type String 50 short_describtion "mobile Kontaktinformation"]
 			}
 			IdentifyingFields:{kontakttyp}			
 		}
@@ -96,10 +97,10 @@ Entity Geschaeftspartner{
 
 Entity Transaktion{
 	entityFields{
-		Field Transaktions_id [type String length 20 short_describtion "Transaktions ID einer Transaktion" BusinessKey]
+		Field Transaktions_id [type String 20 short_describtion "Transaktions ID einer Transaktion" BusinessKey]
 		Field Ausfuehrungsdatum [type Date dateFormat "YYYY-MM-DD"]
-		Field Betrag [type Decimal precision 20 scale 10 short_describtion ""]
-		Field Buchungsart [type String length 50 short_describtion ""]
+		Field Betrag [type Decimal 20,10 short_describtion ""]
+		Field Buchungsart [type String 50 short_describtion ""]
 		Field Loeschung [type Int short_describtion "Indikator ob Entität zu löschen ist" ]
 	}Relationships{
 		

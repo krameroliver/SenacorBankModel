@@ -2,6 +2,8 @@ logpackage RPT
 LAYER_NAME RPT
 LAYERTYPE REPORTING
 TechDesigne STAR
+DataBaseType MariaDB
+Historisation NONE
 
 
 REPORT TESTREPORT

@@ -2,6 +2,8 @@ logpackage ENB_SRC
 LAYER_NAME SRC
 LAYERTYPE STAGE
 TechDesigne DATAVAULT
+DataBaseType MariaDB
+Historisation BITEMPORAL
 
 
 
@@ -15,9 +17,10 @@ Entity acct
 	}
 	{
 	entityFields{
-		Field account_id [ type String length 11 short_describtion "Account ID" BusinessKey]
+		
+		Field account_id [ type String 11 short_describtion "Account ID" BusinessKey]
 		Field district_id [ type Int BusinessKey]
-		Field frequency [ type String length 100]
+		Field frequency [ type String 100]
 		Field parseddate [ type Date dateFormat "YYYY-MM-DD"]
 		Field year [ type Int ]
 		Field month [ type Int ]
@@ -34,9 +37,9 @@ metadata
 		lineDelimiter "\\\\r\\\\n"
 	}{
 	entityFields{
-	Field card_id [ type String length 10 BusinessKey]
-	Field disp_id[ type String length 10 BusinessKey]
-	Field card_type[ type String length 100 original_name "type" ]
+	Field card_id [ type String 10 BusinessKey]
+	Field disp_id[ type String 10 BusinessKey]
+	Field card_type[ type String 100 original_name "type" ]
 	Field year[ type Int ]
 	Field month[ type Int ]
 	Field day[ type Int ]
@@ -52,24 +55,24 @@ metadata
 		lineDelimiter "\\\\r\\\\n"
 	}{
 	entityFields{
-	Field client_id [ type String length 10 BusinessKey]
-	Field sex[ type String length 6]
+	Field client_id [ type String 10 BusinessKey]
+	Field sex[ type String 6]
 	Field fulldate [ type Date dateFormat 'YYYY-MM-DD']
 	Field day[ type Int ]
 	Field month[ type Int ]
 	Field year[ type Int ]
 	Field age[ type Int ]
-	Field social[ type String length 15]
-	Field first[ type String length 255]
-	Field middle[ type String length 255]
-	Field last[ type String length 255]
-	Field phone[ type String length 100]
-	Field email[ type String length 100]
-	Field address_1[ type String length 100]
-	Field address_2[ type String length 100]
-	Field city[ type String length 100]
-	Field state[ type String length 100]
-	Field zipcode[ type String length 100]
+	Field social[ type String 15]
+	Field first[ type String 255]
+	Field middle[ type String 255]
+	Field last[ type String 255]
+	Field phone[ type String 100]
+	Field email[ type String 100]
+	Field address_1[ type String 100]
+	Field address_2[ type String 100]
+	Field city[ type String 100]
+	Field state[ type String 100]
+	Field zipcode[ type String 100]
 	Field district_id[ type Int]
 	}	
 }
@@ -82,10 +85,10 @@ metadata
 		lineDelimiter "\\\\r\\\\n"
 	}{
 	entityFields{
-		Field disp_id[ type String length 10 BusinessKey]
-		Field client_id[ type String length 10 BusinessKey]
-		Field account_id [ type String length 10 BusinessKey]
-		Field user_type [ type String length 6 original_name "type" ]		
+		Field disp_id[ type String 10 BusinessKey]
+		Field client_id[ type String 10 BusinessKey]
+		Field account_id [ type String 10 BusinessKey]
+		Field user_type [ type String 6 original_name "type" ]		
 	}
 }
 
@@ -97,18 +100,18 @@ metadata
 		lineDelimiter "\\\\r\\\\n"
 	}{
 	entityFields{
-		Field loan_id[ type String length 10 BusinessKey]
-		Field account_id[ type String length 10 BusinessKey]
+		Field loan_id[ type String 10 BusinessKey]
+		Field account_id[ type String 10 BusinessKey]
 		Field amount[ type Int]
 		Field duration[ type Int]
 		Field payments[ type Int]
-		Field status[type String length 1]
+		Field status[type String 1]
 		Field year[ type Int]
 		Field month[ type Int]
 		Field day[ type Int]
 		Field fulldate[ type Date dateFormat 'YYYY-MM-DD']
 		Field location[ type Int]
-		Field purpose[ type String length 255]
+		Field purpose[ type String 255]
 	}
 }
 Entity order
@@ -119,12 +122,12 @@ metadata
 		lineDelimiter "\\\\r\\\\n"
 	}{
 	entityFields{
-		Field order_id[ type String length 10 BusinessKey]
-		Field account_id[ type String length 10 BusinessKey]
-		Field bank_to[ type String length 2]
+		Field order_id[ type String 10 BusinessKey]
+		Field account_id[ type String 10 BusinessKey]
+		Field bank_to[ type String 2]
 		Field account_to[ type Int]
-		Field amount[ type Decimal precision 32 scale 2]
-		Field k_symbol[ type String length 100]
+		Field amount[ type Decimal 10,2]
+		Field k_symbol[ type String 100]
 	}
 }
 
@@ -134,23 +137,25 @@ metadata
 		FileName "completedtrans.csv"
 		ColumnDelimiter ","
 		lineDelimiter "\\\\r\\\\n"
-	}{
+	}
+	{
 	entityFields{
-		Field RUN_ID[ type String length 100 ]
-		Field trans_id[ type String length 10 BusinessKey]
-		Field account_id[ type String length 10 BusinessKey]
-		Field trans_type[ type String length 100 original_name "type"]
-		Field operation[ type String length 100]
-		Field amount[ type String length 100]
-		Field balance[ type String length 100]
-		Field k_symbol[ type String length 100]
-		Field bank[ type String length 2]
-		Field account[ type String length 255]
-		Field year[ type Int]
+		Field RUN_ID[ type String 100 ]
+		Field trans_id[ type String 10 BusinessKey]
+		Field account_id[ type String 10 BusinessKey]
+		Field trans_type[ type String 100 original_name "type"]
+		Field operation[ type String 100]
+		Field amount[ type String 100]
+		Field balance[ type String 100]
+		Field k_symbol[ type String 100]
+		Field bank[ type String 2]
+		Field account[ type String 255]
+		Field year[ type Int ] 
+		
 		Field month[ type Int]
 		Field day[ type Int]
-		Field fulldate[ type String length 100]
-		Field fulltime[ type String length 10] 
-		Field fulldatewithtime [ type String length 100 ]
+		Field fulldate[ type String 100]
+		Field fulltime[ type String 10] 
+		Field fulldatewithtime [ type String 100 ]
 	}
 }
