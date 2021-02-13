@@ -5,6 +5,7 @@ TechDesigne DATAVAULT
 DataBaseType MariaDB
 Historisation BITEMPORAL
 
+
 /* 
 AbstractEntity Klaus
 createSuperior
